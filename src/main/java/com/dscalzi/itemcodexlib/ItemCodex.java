@@ -1,3 +1,8 @@
+/*
+ * ItemCodexLib
+ * Copyright (C) 2018 Daniel D. Scalzi
+ * See LICENSE for license information.
+ */
 package com.dscalzi.itemcodexlib;
 
 import java.io.File;
@@ -19,6 +24,11 @@ import com.dscalzi.itemcodexlib.component.Legacy;
 import com.google.gson.Gson;
 import com.google.gson.stream.JsonReader;
 
+/**
+ * Utility class to load and interact with the item codex.
+ * 
+ * @since 1.0.0
+ */
 public class ItemCodex {
 
     public static final String CODEX_FILE_NAME = "items.json";
@@ -29,6 +39,13 @@ public class ItemCodex {
     private File localFile;
     private Logger logger;
     
+    /**
+     * Initialize a new ItemCodex instance.
+     * 
+     * @param plugin The plugin which is initializing this ItemCodex.
+     * 
+     * @since 1.0.0
+     */
     public ItemCodex(JavaPlugin plugin) {
         
         this.legacyMap = new HashMap<Legacy, ItemEntry>();
@@ -82,6 +99,17 @@ public class ItemCodex {
         
     }
     
+    /**
+     * Search for an ItemEntry by alias or legacy string. See
+     * {@link Legacy#parseLegacy(String)} for information on
+     * the format of a legacy string.
+     * 
+     * @param keyword The alias or legacy string to search with.
+     * @return An optional which resolves to the ItemEntry corresponding
+     * to the provided keyword.
+     * 
+     * @since 1.0.0
+     */
     public Optional<ItemEntry> getItem(String keyword){
         Optional<Legacy> lOpt = Legacy.parseLegacy(keyword);
         if(lOpt.isPresent()) {
@@ -90,14 +118,41 @@ public class ItemCodex {
         return getItemByAlias(keyword.toLowerCase());
     }
     
-    public Optional<ItemEntry> getItemByLegacy(Legacy l) {
-        return Optional.ofNullable(legacyMap.get(l));
+    /**
+     * Search for an ItemEntry by Legacy object. This method will not
+     * return items added after MineCraft version 1.13. It is provided
+     * simply for compatibility purposes.
+     * 
+     * See {@link #getItem(String)}.
+     * 
+     * @param legacy The legacy object to search with.
+     * @return An optional which resolves to the ItemEntry corresponding
+     * to the provided legacy object.
+     */
+    public Optional<ItemEntry> getItemByLegacy(Legacy legacy) {
+        return Optional.ofNullable(legacyMap.get(legacy));
     }
     
-    public Optional<ItemEntry> getItemByAlias(String s) {
-        return Optional.ofNullable(aliasMap.get(s));
+    /**
+     * Search for an ItemEntry by alias.
+     * 
+     * @param alias The alias to search with.
+     * @return An optional which resolves to the ItemEntry corresponding
+     * to the provided alias.
+     * 
+     * @since 1.0.0
+     */
+    public Optional<ItemEntry> getItemByAlias(String alias) {
+        return Optional.ofNullable(aliasMap.get(alias));
     }
     
+    /**
+     * Get the full loaded ItemList. 
+     * 
+     * @return The full ItemList object loaded from the json file.
+     * 
+     * @since 1.0.0
+     */
     public ItemList getLoadedList() {
         return this.loadedList;
     }

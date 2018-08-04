@@ -10,6 +10,11 @@ import java.util.List;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.PotionMeta;
 
+/**
+ * Represents an ItemEntry in the JSON file.
+ * 
+ * @since 1.0.0
+ */
 public class ItemEntry {
 
     // These MUST match the fields declared below.
@@ -23,42 +28,109 @@ public class ItemEntry {
     
     private transient ItemStack itemStack;
     
+    /**
+     * Create a new ItemEntry.
+     * 
+     * @param spigot This item's corresponding Spigot object.
+     * @param legacy This item's corresponding Legacy object or null.
+     * @param aliases A list of aliases for this item.
+     * 
+     * @since 1.0.0
+     */
     public ItemEntry(Spigot spigot, Legacy legacy, List<String> aliases) {
-        
         this.spigot = spigot;
         this.legacy = legacy;
         this.aliases = aliases;
-        
     }
 
+    /**
+     * Get this ItemEntry's Spigot object.
+     * 
+     * @return The Spigot object for this item entry.
+     * 
+     * @since 1.0.0
+     */
     public Spigot getSpigot() {
         return spigot;
     }
 
+    /**
+     * Set this ItemEntry's Spigot Object.
+     * 
+     * @param spigot The new Spigot object.
+     * 
+     * @since 1.0.0
+     */
     public void setSpigot(Spigot spigot) {
         this.spigot = spigot;
     }
 
+    /**
+     * Check if this ItemEntry has a legacy component.
+     * This will be false for all items added post 1.13.
+     * 
+     * @return True if this object has a legacy component.
+     * 
+     * @since 1.0.0
+     */
     public boolean hasLegacy() {
         return legacy != null;
     }
     
+    /**
+     * Get this ItemEntry's Legacy object. This will be null
+     * if the item was added post 1.13.
+     * 
+     * <p>See {@link #hasLegacy()}
+     * 
+     * @return The Legacy object for this ItemEntry or null.
+     * 
+     * @since 1.0.0
+     */
     public Legacy getLegacy() {
         return legacy;
     }
 
+    /**
+     * Set this ItemEntry's Legacy object.
+     * 
+     * @param legacy The new Legacy object.
+     * 
+     * @since 1.0.0
+     */
     public void setLegacy(Legacy legacy) {
         this.legacy = legacy;
     }
 
+    /**
+     * Get this ItemEntry's alias list.
+     * 
+     * @return The alias list for this ItemEntry.
+     * 
+     * @since 1.0.0
+     */
     public List<String> getAliases() {
         return aliases;
     }
 
+    /**
+     * Set this ItemEntry's alias list.
+     * 
+     * @param aliases The new alias list.
+     * 
+     * @since 1.0.0
+     */
     public void setAliases(List<String> aliases) {
         this.aliases = aliases;
     }
     
+    /**
+     * Get the ItemStack represented by this ItemEntry.
+     * 
+     * @return The ItemStack represented by this ItemEntry.
+     * 
+     * @since 1.0.0
+     */
     public ItemStack getItemStack() {
         if(this.itemStack == null) {
             this.itemStack = new ItemStack(this.getSpigot().getMaterial());

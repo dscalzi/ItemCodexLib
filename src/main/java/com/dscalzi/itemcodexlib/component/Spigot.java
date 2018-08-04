@@ -8,6 +8,14 @@ package com.dscalzi.itemcodexlib.component;
 import org.bukkit.Material;
 import org.bukkit.potion.PotionData;
 
+/**
+ * Represents a Spigot object in the JSON file.
+ * 
+ * <p>Stores meta data about an item's implementation
+ * in the Spigot/Bukkit API.
+ * 
+ * @since 1.0.0
+ */
 public class Spigot  {
     
     // These MUST match the declared fields in org.bukkit.potion.PotionData
@@ -22,31 +30,84 @@ public class Spigot  {
     private Material material;
     private PotionData potionData;
     
+    /**
+     * Create a new Spigot object.
+     * 
+     * @param material The Material represented by this item.
+     * 
+     * @since 1.0.0
+     */
     public Spigot(Material material) {
         this(material, null);
     }
     
+    /**
+     * Create a new Spigot object.
+     * 
+     * @param material The Material represented by this item.
+     * @param potionData The potion data for this object or null.
+     * 
+     * @since 1.0.0
+     */
     public Spigot(Material material, PotionData potionData) {
         this.material = material;
         this.potionData = potionData;
     }
     
+    /**
+     * Get the Material of this item.
+     * 
+     * @return The Material of this item.
+     * 
+     * @since 1.0.0
+     */
     public Material getMaterial() {
         return material;
     }
 
+    /**
+     * Set the Material of this item.
+     * 
+     * @param material The new Material.
+     * 
+     * @since 1.0.0
+     */
     public void setMaterial(Material material) {
         this.material = material;
     }
     
+    /**
+     * Check if this item has PotionData.
+     * 
+     * @return True if this item has potion data.
+     * 
+     * @since 1.0.0
+     */
     public boolean hasPotionData() {
         return this.potionData != null;
     }
     
+    /**
+     * Get the PotionData for this item. This returns
+     * null if the item does not have PotionData.
+     * 
+     * <p>See {@link #hasPotionData()}.
+     * 
+     * @return The PotionData for this item or null.
+     * 
+     * @since 1.0.0
+     */
     public PotionData getPotionData() {
         return potionData;
     }
 
+    /**
+     * Set the PotionData for this item.
+     * 
+     * @param pData The new PotionData.
+     * 
+     * @since 1.0.0
+     */
     public void setPotionData(PotionData pData) {
         this.potionData = pData;
     }

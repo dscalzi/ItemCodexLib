@@ -1,9 +1,20 @@
+/*
+ * ItemCodexLib
+ * Copyright (C) 2018 Daniel D. Scalzi
+ * See LICENSE for license information.
+ */
 package com.dscalzi.itemcodexlib;
 
 import java.util.regex.Pattern;
 
 import org.bukkit.Bukkit;
 
+/**
+ * Utility class to assist with MineCraft version semantics.
+ * 
+ * Supports {major}.{minor}.{revision}, where the revision is optional.
+ * Does not support pre-release components.
+ */
 public class VersionUtil {
 
     private static final Pattern VERSION_REGEX = Pattern.compile("\\(MC: (.*)\\)");
@@ -13,7 +24,9 @@ public class VersionUtil {
     /**
      * Get the MineCraft version for this implementation.
      * 
-     * @return
+     * @return The MineCraft version of the server.
+     * 
+     * @since 1.0.0
      */
     public static String getVersion() {
         if(version == null) {
@@ -28,6 +41,8 @@ public class VersionUtil {
      * @param first The first version string.
      * @param second The second version string.
      * @return True if the first version is greater than the second.
+     * 
+     * @since 1.0.0
      */
     public static boolean gt(String first, String second) {
         return compare(first, second) == 1;
@@ -39,6 +54,8 @@ public class VersionUtil {
      * @param first The first version string.
      * @param second The second version string.
      * @return True if the first version is less than the second.
+     * 
+     * @since 1.0.0
      */
     public static boolean lt(String first, String second) {
         return compare(first, second) == -1;
@@ -50,12 +67,23 @@ public class VersionUtil {
      * @param first The first version string.
      * @param second The second version string.
      * @return True if the first version is equal to the second.
+     * 
+     * @since 1.0.0
      */
     public static boolean eq(String first, String second) {
         return compare(first, second) == 0;
     }
 
-    // java.util.Comparator<String> in static context.
+    /**
+     * See {@link java.util.Comparator#compare(Object, Object)}.
+     * 
+     * @param first The first version string.
+     * @param second The second version string.
+     * @return A negative integer if first < second, 0 if equal,
+     * and a positive integer if first > second.
+     * 
+     * @since 1.0.0
+     */
     public static int compare(String first, String second) {
         String[] fPts = first.split(".");
         String[] sPts = second.split(".");

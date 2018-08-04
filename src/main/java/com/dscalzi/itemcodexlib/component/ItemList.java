@@ -7,6 +7,11 @@ package com.dscalzi.itemcodexlib.component;
 
 import java.util.List;
 
+/**
+ * Represents the root object in the JSON file.
+ * 
+ * @since 1.0.0
+ */
 public class ItemList {
 
     // These MUST match the fields declared below.
@@ -16,25 +21,59 @@ public class ItemList {
     private String version;
     private List<ItemEntry> items;
     
+    /**
+     * Create a new ItemEntry.
+     * 
+     * @param version The corresponding MineCraft version.
+     * @param entries A list of ItemEntries.
+     * 
+     * @since 1.0.0
+     */
     public ItemList(String version, List<ItemEntry> entries) {
-        
         this.version = version;
         this.items = entries;
-        
     }
 
+    /**
+     * Get the MineCraft version this ItemList targets.
+     * 
+     * @return The MineCraft version this ItemList targets.
+     * 
+     * @since 1.0.0
+     */
     public String getVersion() {
         return version;
     }
 
+    /**
+     * Set the MineCraft version this ItemList targets.
+     * 
+     * @param version The new MineCraft version.
+     * 
+     * @since 1.0.0
+     */
     public void setVersion(String version) {
         this.version = version;
     }
 
+    /**
+     * Get a list of ItemEntry objects declared by this ItemList.
+     * 
+     * @return A list of ItemEntry objects.
+     * 
+     * @since 1.0.0
+     */
     public List<ItemEntry> getItems() {
         return items;
     }
 
+    /**
+     * Set the list of ItemEntry objects declared by this ItemList.
+     * 
+     * @param entries The new list of ItemEntry objects.
+     * 
+     * @since 1.0.0
+     */
     public void setItems(List<ItemEntry> entries) {
         this.items = entries;
     }
