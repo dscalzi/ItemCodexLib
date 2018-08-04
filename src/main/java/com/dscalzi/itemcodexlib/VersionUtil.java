@@ -79,8 +79,8 @@ public class VersionUtil {
      * 
      * @param first The first version string.
      * @param second The second version string.
-     * @return A negative integer if first < second, 0 if equal,
-     * and a positive integer if first > second.
+     * @return A negative integer if first &lt; second, 0 if equal,
+     * and a positive integer if first &gt; second.
      * 
      * @since 1.0.0
      */
