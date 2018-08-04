@@ -21,7 +21,9 @@ import org.bukkit.plugin.java.JavaPlugin;
 import com.dscalzi.itemcodexlib.component.ItemEntry;
 import com.dscalzi.itemcodexlib.component.ItemList;
 import com.dscalzi.itemcodexlib.component.Legacy;
+import com.dscalzi.itemcodexlib.component.adapter.ItemEntryTypeAdapter;
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.google.gson.stream.JsonReader;
 
 /**
@@ -54,8 +56,10 @@ public class ItemCodex {
         this.localFile = new File(plugin.getDataFolder() + File.separator + CODEX_FILE_NAME);
         this.logger = plugin.getLogger();
         
+        logger.info("Loading ItemCodex..");
         this.initialize();
         this.initMaps();
+        logger.info("ItemCodex loaded!");
     }
     
     private void initialize() {
@@ -73,6 +77,8 @@ public class ItemCodex {
             this.loadedList = il;
         }
         
+        cleanJSONFile();
+        
     }
     
     private void updateLocalFile() {
@@ -85,7 +91,7 @@ public class ItemCodex {
     }
     
     private ItemList loadJSONFile() {
-        Gson g = new Gson();
+        Gson g = new GsonBuilder().registerTypeAdapter(ItemEntry.class, new ItemEntryTypeAdapter(this.logger)).create();
         
         try(Reader r = new FileReader(localFile);
             JsonReader jr = new JsonReader(r)){
@@ -96,6 +102,10 @@ public class ItemCodex {
             e.printStackTrace();
             return null;
         }
+    }
+    
+    private void cleanJSONFile() {
+        this.loadedList.getItems().removeIf(e -> e == null);
     }
     
     private void initMaps() {

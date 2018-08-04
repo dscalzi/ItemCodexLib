@@ -6,17 +6,30 @@
 package com.dscalzi.itemcodexlib.component.adapter;
 
 import java.lang.reflect.Type;
+import java.util.List;
+import java.util.logging.Logger;
+
 import com.dscalzi.itemcodexlib.component.ItemEntry;
 import com.dscalzi.itemcodexlib.component.Legacy;
 import com.dscalzi.itemcodexlib.component.Spigot;
 import com.google.gson.Gson;
+import com.google.gson.JsonDeserializationContext;
+import com.google.gson.JsonDeserializer;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
+import com.google.gson.JsonParseException;
 import com.google.gson.JsonSerializationContext;
 import com.google.gson.JsonSerializer;
+import com.google.gson.reflect.TypeToken;
 
-public class ItemEntryTypeAdapter implements JsonSerializer<ItemEntry>{
+public class ItemEntryTypeAdapter implements JsonSerializer<ItemEntry>, JsonDeserializer<ItemEntry>{
 
+    private Logger logger;
+    
+    public ItemEntryTypeAdapter(Logger logger) {
+        this.logger = logger;
+    }
+    
     @Override
     public JsonElement serialize(ItemEntry src, Type typeOfSrc, JsonSerializationContext context) {
         
@@ -47,6 +60,29 @@ public class ItemEntryTypeAdapter implements JsonSerializer<ItemEntry>{
         
         
         return itemEntry;
+    }
+
+    @Override
+    public ItemEntry deserialize(JsonElement json, Type typeOfT, JsonDeserializationContext context)
+            throws JsonParseException {
+        
+        Gson g = new Gson();
+        JsonObject ob = json.getAsJsonObject();
+        
+        Legacy legacy = null;
+        if(ob.has(ItemEntry.KEY_LEGACY)) {
+            legacy = g.fromJson(ob.get(ItemEntry.KEY_LEGACY), Legacy.class);
+        }
+        List<String> aliases = g.fromJson(ob.get(ItemEntry.KEY_ALIASES), new TypeToken<List<String>>() {}.getType());
+        
+        Spigot spigot = g.fromJson(ob.get(ItemEntry.KEY_SPIGOT), Spigot.class);
+        if(spigot.getMaterial() == null) {
+            logger.warning("Error while parsing: Entry has unknown material type " + ob.get(ItemEntry.KEY_SPIGOT).getAsJsonObject().get(Spigot.KEY_MATERIAL) + ".");
+            
+            return null;
+        }
+        
+        return new ItemEntry(spigot, legacy, aliases);
     }
 
 }
