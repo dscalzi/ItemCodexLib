@@ -8,11 +8,14 @@ ItemCodexLib is a lightweight library which enables your plugin to store aliases
 ```JSON
 {
   "version": "1.13",
+  "revision": "1.0.0",
   "items": []
 }
 ```
 
 Item objects are added to the `items` array.
+
+The `revision` field is used to update the JSON file. If the stored JSON file's version is less than the internal version, it will be updated. If for whatever reason you're using a modified version of this file and do not want it to be updated, change it's version to something large.
 
 ### Example Items
 

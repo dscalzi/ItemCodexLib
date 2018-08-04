@@ -31,6 +31,7 @@ import com.google.gson.stream.JsonReader;
  */
 public class ItemCodex {
 
+    public static final String VERSION = "1.0.0";
     public static final String CODEX_FILE_NAME = "items.json";
     
     private ItemList loadedList;
@@ -60,26 +61,41 @@ public class ItemCodex {
     private void initialize() {
         
         if(!this.localFile.exists()) {
-            try(InputStream is = ItemCodex.class.getResourceAsStream("/" + CODEX_FILE_NAME)) {
-                Files.copy(is, localFile.toPath(), StandardCopyOption.REPLACE_EXISTING);
-            } catch (IOException e) {
-                logger.severe("Failed to save " + CODEX_FILE_NAME + " locally.");
-                e.printStackTrace();
-            }
+            updateLocalFile();
         }
         
+        ItemList il = loadJSONFile();
+        if(VersionUtil.gt(VERSION, il.getRevision())) {
+            logger.info("Updating " + CODEX_FILE_NAME + ": v" + il.getRevision() + " -> v" + VERSION);
+            updateLocalFile();
+            this.loadedList = loadJSONFile();
+        } else {
+            this.loadedList = il;
+        }
+        
+    }
+    
+    private void updateLocalFile() {
+        try(InputStream is = ItemCodex.class.getResourceAsStream("/" + CODEX_FILE_NAME)) {
+            Files.copy(is, localFile.toPath(), StandardCopyOption.REPLACE_EXISTING);
+        } catch (IOException e) {
+            logger.severe("Failed to save " + CODEX_FILE_NAME + " locally.");
+            e.printStackTrace();
+        }
+    }
+    
+    private ItemList loadJSONFile() {
         Gson g = new Gson();
         
         try(Reader r = new FileReader(localFile);
             JsonReader jr = new JsonReader(r)){
             
-            ItemList il = g.fromJson(jr, ItemList.class);
-            this.loadedList = il;
+            return g.fromJson(jr, ItemList.class);
             
         } catch (IOException e) {
             e.printStackTrace();
+            return null;
         }
-        
     }
     
     private void initMaps() {
@@ -94,7 +110,6 @@ public class ItemCodex {
             if(e.hasLegacy()) {
                legacyMap.put(e.getLegacy(), e);
             }
-            
         }
         
     }

@@ -16,21 +16,25 @@ public class ItemList {
 
     // These MUST match the fields declared below.
     public static final String KEY_VERSION = "version";
+    public static final String KEY_REVISION = "revision";
     public static final String KEY_ITEMS = "items";
     
     private String version;
+    private String revision;
     private List<ItemEntry> items;
     
     /**
      * Create a new ItemEntry.
      * 
      * @param version The corresponding MineCraft version.
+     * @param revision The revision version of the JSON file.
      * @param entries A list of ItemEntries.
      * 
      * @since 1.0.0
      */
-    public ItemList(String version, List<ItemEntry> entries) {
+    public ItemList(String version, String revision, List<ItemEntry> entries) {
         this.version = version;
+        this.revision = revision;
         this.items = entries;
     }
 
@@ -55,6 +59,28 @@ public class ItemList {
     public void setVersion(String version) {
         this.version = version;
     }
+    
+   /**
+    * Get the version of the JSON file.
+    * 
+    * @return The version of the JSON file.
+    * 
+    * @since 1.0.0
+    */
+   public String getRevision() {
+       return revision;
+   }
+
+   /**
+    * Set the version of the JSON file.
+    * 
+    * @param revision The new version.
+    * 
+    * @since 1.0.0
+    */
+   public void setRevision(String revision) {
+       this.revision = revision;
+   }
 
     /**
      * Get a list of ItemEntry objects declared by this ItemList.

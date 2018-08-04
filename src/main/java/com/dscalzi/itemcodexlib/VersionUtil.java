@@ -85,8 +85,8 @@ public class VersionUtil {
      * @since 1.0.0
      */
     public static int compare(String first, String second) {
-        String[] fPts = first.split(".");
-        String[] sPts = second.split(".");
+        String[] fPts = first.split("\\.");
+        String[] sPts = second.split("\\.");
         
         // Compare Major
         int fMaj = Integer.parseInt(fPts[0]), sMaj = Integer.parseInt(sPts[0]);
