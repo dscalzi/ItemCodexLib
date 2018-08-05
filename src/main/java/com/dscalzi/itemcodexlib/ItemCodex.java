@@ -17,7 +17,11 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.logging.Logger;
 
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.PotionMeta;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.bukkit.potion.PotionData;
+
 import com.dscalzi.itemcodexlib.component.ItemEntry;
 import com.dscalzi.itemcodexlib.component.ItemList;
 import com.dscalzi.itemcodexlib.component.Legacy;
@@ -115,7 +119,9 @@ public class ItemCodex {
         
         for(final ItemEntry e : loadedList.getItems()) {
             
-            aliasMap.put(e.getSpigot().getMaterial().name().toLowerCase(), e);
+            if(!e.getSpigot().hasPotionData()) {
+                aliasMap.put(e.getSpigot().getMaterial().name().toLowerCase(), e);
+            }
             for(final String s : e.getAliases()) {
                 aliasMap.put(s, e);
             }
@@ -172,6 +178,38 @@ public class ItemCodex {
      */
     public Optional<ItemEntry> getItemByAlias(String alias) {
         return Optional.ofNullable(aliasMap.get(alias));
+    }
+    
+    /**
+     * Search for the ItemEntry matching the provided ItemStack.
+     * 
+     * @param item The ItemStack to search with.
+     * @return An optional which resolves to the ItemEntry corresponding
+     * to the provided ItemStack.
+     * 
+     * @since 1.0.0
+     */
+    public Optional<ItemEntry> getItemByItemStack(ItemStack item){
+        
+        if(item.hasItemMeta() && item.getItemMeta() instanceof PotionMeta) {
+            PotionData originData = ((PotionMeta)item.getItemMeta()).getBasePotionData();
+            for(ItemEntry e : loadedList.getItems()) {
+                if(e.getSpigot().getMaterial().equals(item.getType())) {
+                    if(e.getSpigot().hasPotionData() && e.getSpigot().getPotionData().equals(originData)) {
+                        return Optional.of(e);
+                    }
+                }
+            }
+        } else {
+            for(ItemEntry e : loadedList.getItems()) {
+                if(e.getSpigot().getMaterial().equals(item.getType())) {
+                    return Optional.of(e);
+                }
+            }
+        }
+        
+        return Optional.empty();
+        
     }
     
     /**
