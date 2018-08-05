@@ -109,7 +109,6 @@
         "data": 0
       },
       "aliases": [
-        "grass",
         "grassblock",
         "greendirt",
         "greenearth",
@@ -1544,6 +1543,7 @@
         "data": 1
       },
       "aliases": [
+        "grass",
         "longgrass",
         "tallgrass",
         "wildgrass",
