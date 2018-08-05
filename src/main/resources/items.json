@@ -3419,18 +3419,26 @@
         "data": 0
       },
       "aliases": [
-        "woodenpressureplate",
-        "woodenpressplate",
-        "woodenpplate",
-        "woodenplate",
-        "woodpressureplate",
-        "woodpressplate",
-        "woodpplate",
-        "woodplate",
-        "wpressureplate",
-        "wpressplate",
-        "wpplate",
-        "wplate"
+        "oakpressureplate",
+        "oakpressplate",
+        "oakpplate",
+        "oakplate",
+        "oakwoodpressureplate",
+        "oakwoodpressplate",
+        "oakwoodpplate",
+        "oakwoodplate",
+        "owoodpressureplate",
+        "owoodpressplate",
+        "owoodpplate",
+        "owoodplate",
+        "owpressureplate",
+        "owpressplate",
+        "owpplate",
+        "owplate",
+        "opressureplate",
+        "opressplate",
+        "opplate",
+        "oplate"
       ]
     },
     {
@@ -3438,20 +3446,26 @@
         "material": "BIRCH_PRESSURE_PLATE"
       },
       "aliases": [
-        "birchwoodenpressureplate",
-        "birchwoodenpressplate",
-        "birchwoodenpplate",
-        "birchwoodenplate",
+        "birchpressureplate",
+        "birchpressplate",
+        "birchpplate",
+        "birchplate",
         "birchwoodpressureplate",
         "birchwoodpressplate",
         "birchwoodpplate",
         "birchwoodplate",
-        "birchwpressureplate",
-        "birchwpressplate",
-        "birchwpplate",
-        "birchwplate",
-       "bwplate",
-       "bwoodplate"
+        "bwoodpressureplate",
+        "bwoodpressplate",
+        "bwoodpplate",
+        "bwoodplate",
+        "bwpressureplate",
+        "bwpressplate",
+        "bwpplate",
+        "bwplate",
+        "bpressureplate",
+        "bpressplate",
+        "bpplate",
+        "bplate"
       ]
     },
     {
@@ -3459,20 +3473,26 @@
         "material": "SPRUCE_PRESSURE_PLATE"
       },
       "aliases": [
-        "sprucewoodenpressureplate",
-        "sprucewoodenpressplate",
-        "sprucewoodenpplate",
-        "sprucewoodenplate",
+        "sprucepressureplate",
+        "sprucepressplate",
+        "sprucepplate",
+        "spruceplate",
         "sprucewoodpressureplate",
         "sprucewoodpressplate",
         "sprucewoodpplate",
         "sprucewoodplate",
-        "sprucewpressureplate",
-        "sprucewpressplate",
-        "sprucewpplate",
-        "sprucewplate",
+        "swoodpressureplate",
+        "swoodpressplate",
+        "swoodpplate",
+        "swoodplate",
+        "swpressureplate",
+        "swpressplate",
+        "swpplate",
         "swplate",
-        "swoodplate"
+        "spressureplate",
+        "spressplate",
+        "spplate",
+        "splate"
       ]
     },
     {
@@ -3480,20 +3500,26 @@
         "material": "JUNGLE_PRESSURE_PLATE"
       },
       "aliases": [
-        "junglewoodenpressureplate",
-        "junglewoodenpressplate",
-        "junglewoodenpplate",
-        "junglewoodenplate",
+        "junglepressureplate",
+        "junglepressplate",
+        "junglepplate",
+        "jungleplate",
         "junglewoodpressureplate",
         "junglewoodpressplate",
         "junglewoodpplate",
         "junglewoodplate",
-        "junglewpressureplate",
-        "junglewpressplate",
-        "junglewpplate",
-        "junglewplate",
+        "jwoodpressureplate",
+        "jwoodpressplate",
+        "jwoodpplate",
+        "jwoodplate",
+        "jwpressureplate",
+        "jwpressplate",
+        "jwpplate",
         "jwplate",
-         "jwoodplate"
+        "jpressureplate",
+        "jpressplate",
+        "jpplate",
+        "jplate"
       ]
     },
     {
@@ -3501,20 +3527,26 @@
         "material": "ACACIA_PRESSURE_PLATE"
       },
       "aliases": [
-        "acaciawoodenpressureplate",
-        "acaciawoodenpressplate",
-        "acaciawoodenpplate",
-        "acaciawoodenplate",
+        "acaciapressureplate",
+        "acaciapressplate",
+        "acaciapplate",
+        "acaciaplate",
         "acaciawoodpressureplate",
         "acaciawoodpressplate",
         "acaciawoodpplate",
         "acaciawoodplate",
-        "acaciawpressureplate",
-        "acaciawpressplate",
-        "acaciawpplate",
-        "acaciawplate",
+        "awoodpressureplate",
+        "awoodpressplate",
+        "awoodpplate",
+        "awoodplate",
+        "ajwpressureplate",
+        "awpressplate",
+        "awpplate",
         "awplate",
-        "awoodplate"
+        "apressureplate",
+        "apressplate",
+        "applate",
+        "aplate"
       ]
     },
     {
@@ -3522,22 +3554,26 @@
         "material": "DARK_OAK_PRESSURE_PLATE"
       },
       "aliases": [
-        "darkoakwoodenpressureplate",
-        "darkoakwoodenpressplate",
-        "darkoakwoodenpplate",
-        "darkoakwoodenplate",
+        "darkoakpressureplate",
+        "darkoakpressplate",
+        "darkoakpplate",
+        "darkoakplate",
         "darkoakwoodpressureplate",
         "darkoakwoodpressplate",
         "darkoakwoodpplate",
         "darkoakwoodplate",
-        "darkoakwpressureplate",
-        "darkoakwpressplate",
-        "darkoakwpplate",
-        "darkoakwplate",
-        "darkowplate",
-        "darkowoodplate",
+        "dowoodpressureplate",
+        "dowoodpressplate",
+        "dowoodpplate",
+        "dowoodplate",
+        "dowpressureplate",
+        "dowpressplate",
+        "dowpplate",
         "dowplate",
-        "dowoodplate"
+        "dopressureplate",
+        "dopressplate",
+        "dopplate",
+        "doplate"
       ]
     },
     {
@@ -3720,7 +3756,7 @@
       },
       "aliases": [
         "carvedpumpkin",
-    "cpumpkin"
+        "cpumpkin"
       ]
     },
     {
@@ -4190,6 +4226,9 @@
         "data": 0
       },
       "aliases": [
+        "oaktrapdoor",
+        "otrapdoor",
+        "owoodtrapdoor",
         "trapdoor",
         "doortrap",
         "hatch",
@@ -4265,7 +4304,7 @@
     },
     {
       "spigot": {
-        "material": "ACACIA_TRAPDOOR"
+        "material": "DARK_OAK_TRAPDOOR"
       },
       "aliases": [
         "darkoaktrapdoor",
@@ -12660,7 +12699,7 @@
       },
       "aliases": [
         "drykelpblock",
-    "driedkelpblock"
+        "driedkelpblock"
       ]
     },
     {
@@ -19033,6 +19072,7 @@
         "material": "TRIDENT"
       },
       "aliases": [
+        "trident",
         "spear"
       ]
     },
@@ -19203,7 +19243,7 @@
         "material": "HORN_CORAL_BLOCK"
       },
       "aliases": [
-        "horncoral"
+        "horncoralblock"
       ]
     },
     {
@@ -19243,7 +19283,7 @@
         "material": "DEAD_HORN_CORAL_BLOCK"
       },
       "aliases": [
-        "deadhorncoral"
+        "deadhorncoralblock"
       ]
     },
     {
