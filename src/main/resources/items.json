@@ -109,6 +109,7 @@
         "data": 0
       },
       "aliases": [
+        "grass",
         "grassblock",
         "greendirt",
         "greenearth",
@@ -769,11 +770,44 @@
         "oaktree",
         "oaklog",
         "oaktrunk",
-        "oakwood",
         "otree",
         "olog",
-        "otrunk",
+        "otrunk"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "OAK_WOOD"
+      },
+      "legacy": {
+        "id": 17,
+        "data": 12
+      },
+      "aliases": [
+        "oakwood",
         "owood"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "STRIPPED_OAK_WOOD"
+      },
+      "aliases": [
+        "strippedoakwood",
+        "strippedowood",
+        "soakwood",
+        "sowood"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "STRIPPED_OAK_LOG"
+      },
+      "aliases": [
+        "strippedoaklog",
+        "strippedolog",
+        "soaklog",
+        "solog"
       ]
     },
     {
@@ -789,28 +823,75 @@
         "pinetree",
         "pinelog",
         "pinetrunk",
-        "pinewood",
         "darktree",
         "darklog",
         "darktrunk",
-        "darkwood",
         "spruce",
         "sprucetree",
         "sprucelog",
         "sprucetrunk",
-        "sprucewood",
         "dtree",
         "dlog",
         "dtrunk",
-        "dwood",
         "stree",
         "slog",
         "strunk",
-        "swood",
         "ptree",
         "plog",
-        "ptrunk",
+        "ptrunk"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "SPRUCE_WOOD"
+      },
+      "legacy": {
+        "id": 17,
+        "data": 13
+      },
+      "aliases": [
+        "sprucewood",
+        "swood",
+        "darkwood",
+        "dwood",
+        "pinewood",
         "pwood"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "STRIPPED_SPRUCE_WOOD"
+      },
+      "aliases": [
+        "strippedsprucewood",
+        "strippedswood",
+        "strippeddarkwood",
+        "strippeddwood",
+        "strippedpinewood",
+        "spwood",
+        "ssprucewood",
+        "sswood",
+        "sdarkwood",
+        "sdwood",
+        "spinewood"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "STRIPPED_SPRUCE_LOG"
+      },
+      "aliases": [
+        "strippedsprucelog",
+        "strippedslog",
+        "strippeddarklog",
+        "strippeddlog",
+        "strippedpinelog",
+        "splog",
+        "ssprucelog",
+        "sslog",
+        "sdarklog",
+        "sdlog",
+        "spinelog"
       ]
     },
     {
@@ -826,7 +907,6 @@
         "birchtree",
         "birchlog",
         "birchtrunk",
-        "birchwood",
         "whitetree",
         "whitelog",
         "whitetrunk",
@@ -834,19 +914,61 @@
         "lighttree",
         "lightlog",
         "lighttrunk",
-        "lightwood",
         "btree",
         "blog",
         "btrunk",
-        "bwood",
         "wtree",
         "wlog",
         "wtrunk",
         "wwood",
         "ltree",
         "llog",
-        "ltrunk",
+        "ltrunk"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "BIRCH_WOOD"
+      },
+      "legacy": {
+        "id": 17,
+        "data": 14
+      },
+      "aliases": [
+        "birchwood",
+        "bwood",
+        "lightwood",
         "lwood"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "STRIPPED_BIRCH_WOOD"
+      },
+      "aliases": [
+        "strippedbirchwood",
+        "strippedbwood",
+        "strippedlightwood",
+        "strippedlwood",
+        "sbirchwood",
+        "sbwood",
+        "slightwood",
+        "slwood"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "STRIPPED_BIRCH_LOG"
+      },
+      "aliases": [
+        "strippedbirchlog",
+        "strippedblog",
+        "strippedlightlog",
+        "strippedllog",
+        "sbirchlog",
+        "sblog",
+        "slightlog",
+        "sllog"
       ]
     },
     {
@@ -861,21 +983,62 @@
         "jungletree",
         "junglelog",
         "jungletrunk",
-        "junglewood",
         "jungle",
         "forest",
         "foresttree",
         "forestlog",
         "foresttrunk",
-        "forestwood",
         "jtree",
         "jlog",
         "jtrunk",
-        "jwood",
         "ftree",
         "flog",
-        "ftrunk",
+        "ftrunk"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "JUNGLE_WOOD"
+      },
+      "legacy": {
+        "id": 17,
+        "data": 15
+      },
+      "aliases": [
+        "junglewood",
+        "jwood",
+        "forestwood",
         "fwood"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "STRIPPED_JUNGLE_WOOD"
+      },
+      "aliases": [
+        "strippedjunglewood",
+        "strippedjwood",
+        "strippedforestwood",
+        "strippedfwood",
+        "sjunglewood",
+        "sjwood",
+        "sforestwood",
+        "sfwood"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "STRIPPED_JUNGLE_LOG"
+      },
+      "aliases": [
+        "strippedjunglelog",
+        "strippedjlog",
+        "strippedforestlog",
+        "strippedflog",
+        "sjunglelog",
+        "sjlog",
+        "sforestlog",
+        "sflog"
       ]
     },
     {
@@ -1381,7 +1544,6 @@
         "data": 1
       },
       "aliases": [
-        "grass",
         "longgrass",
         "tallgrass",
         "wildgrass",
@@ -3273,6 +3435,113 @@
     },
     {
       "spigot": {
+        "material": "BIRCH_PRESSURE_PLATE"
+      },
+      "aliases": [
+        "birchwoodenpressureplate",
+        "birchwoodenpressplate",
+        "birchwoodenpplate",
+        "birchwoodenplate",
+        "birchwoodpressureplate",
+        "birchwoodpressplate",
+        "birchwoodpplate",
+        "birchwoodplate",
+        "birchwpressureplate",
+        "birchwpressplate",
+        "birchwpplate",
+        "birchwplate",
+		   "bwplate",
+		   "bwoodplate"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "SPRUCE_PRESSURE_PLATE"
+      },
+      "aliases": [
+        "sprucewoodenpressureplate",
+        "sprucewoodenpressplate",
+        "sprucewoodenpplate",
+        "sprucewoodenplate",
+        "sprucewoodpressureplate",
+        "sprucewoodpressplate",
+        "sprucewoodpplate",
+        "sprucewoodplate",
+        "sprucewpressureplate",
+        "sprucewpressplate",
+        "sprucewpplate",
+        "sprucewplate",
+		    "swplate",
+	      "swoodplate"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "JUNGLE_PRESSURE_PLATE"
+      },
+      "aliases": [
+        "junglewoodenpressureplate",
+        "junglewoodenpressplate",
+        "junglewoodenpplate",
+        "junglewoodenplate",
+        "junglewoodpressureplate",
+        "junglewoodpressplate",
+        "junglewoodpplate",
+        "junglewoodplate",
+        "junglewpressureplate",
+        "junglewpressplate",
+        "junglewpplate",
+        "junglewplate",
+		    "jwplate",
+		     "jwoodplate"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "ACACIA_PRESSURE_PLATE"
+      },
+      "aliases": [
+        "acaciawoodenpressureplate",
+        "acaciawoodenpressplate",
+        "acaciawoodenpplate",
+        "acaciawoodenplate",
+        "acaciawoodpressureplate",
+        "acaciawoodpressplate",
+        "acaciawoodpplate",
+        "acaciawoodplate",
+        "acaciawpressureplate",
+        "acaciawpressplate",
+        "acaciawpplate",
+        "acaciawplate",
+		    "awplate",
+		    "awoodplate"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "DARK_OAK_PRESSURE_PLATE"
+      },
+      "aliases": [
+        "darkoakwoodenpressureplate",
+        "darkoakwoodenpressplate",
+        "darkoakwoodenpplate",
+        "darkoakwoodenplate",
+        "darkoakwoodpressureplate",
+        "darkoakwoodpressplate",
+        "darkoakwoodpplate",
+        "darkoakwoodplate",
+        "darkoakwpressureplate",
+        "darkoakwpressplate",
+        "darkoakwpplate",
+        "darkoakwplate",
+		    "darkowplate",
+		    "darkowoodplate",
+		    "dowplate",
+		    "dowoodplate"
+      ]
+    },
+    {
+      "spigot": {
         "material": "REDSTONE_ORE"
       },
       "legacy": {
@@ -3435,6 +3704,14 @@
     },
     {
       "spigot": {
+        "material": "PUMPKIN"
+      },
+      "aliases": [
+        "pumpkin"
+      ]
+    },
+    {
+      "spigot": {
         "material": "CARVED_PUMPKIN"
       },
       "legacy": {
@@ -3442,7 +3719,8 @@
         "data": 0
       },
       "aliases": [
-        "pumpkin"
+        "carvedpumpkin",
+		"cpumpkin"
       ]
     },
     {
@@ -3919,6 +4197,86 @@
         "doort",
         "trapd",
         "dtrap"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "SPRUCE_TRAPDOOR"
+      },
+      "aliases": [
+        "sprucetrapdoor",
+        "sprucetdoor",
+        "sprucedoortrap",
+        "pinetrapdoor",
+        "pinetdoor",
+        "pinedoortrap",
+        "strapdoor",
+        "stdoor",
+        "sdoortrap",
+        "ptrapdoor",
+        "ptdoor",
+        "pdoortrap"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "BIRCH_TRAPDOOR"
+      },
+      "aliases": [
+        "birchtrapdoor",
+        "birchtdoor",
+        "birchdoortrap",
+        "btrapdoor",
+        "btdoor",
+        "bdoortrap"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "JUNGLE_TRAPDOOR"
+      },
+      "aliases": [
+        "jungletrapdoor",
+        "jungletdoor",
+        "jungledoortrap",
+        "jtrapdoor",
+        "jtdoor",
+        "jdoortrap",
+        "foresttrapdoor",
+        "foresttdoor",
+        "forestdoortrap",
+        "ftrapdoor",
+        "ftdoor",
+        "fdoortrap"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "ACACIA_TRAPDOOR"
+      },
+      "aliases": [
+        "acaciatrapdoor",
+        "acaciatdoor",
+        "acaciadoortrap",
+        "atrapdoor",
+        "atdoor",
+        "adoortrap"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "ACACIA_TRAPDOOR"
+      },
+      "aliases": [
+        "darkoaktrapdoor",
+        "darkoaktdoor",
+        "darkoakdoortrap",
+        "doaktrapdoor",
+        "doaktdoor",
+        "doakdoortrap",
+        "dotrapdoor",
+        "dotdoor",
+        "dodoortrap"
       ]
     },
     {
@@ -5617,6 +5975,17 @@
     },
     {
       "spigot": {
+        "material": "DEBUG_STICK"
+      },
+      "aliases": [
+        "debugstick",
+        "dstick",
+        "debugwand",
+        "dwand"
+      ]
+    },
+    {
+      "spigot": {
         "material": "BEACON"
       },
       "legacy": {
@@ -5722,7 +6091,59 @@
         "wplankbutton",
         "plankbutton",
         "woodbutton",
-        "wbutton"
+        "wbutton",
+        "oakbutton",
+        "obutton"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "SPRUCE_BUTTON"
+      },
+      "aliases": [
+        "sprucebutton",
+        "sbutton",
+        "pinebutton",
+        "pbutton"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "BIRCH_BUTTON"
+      },
+      "aliases": [
+        "birchbutton",
+        "bbutton"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "JUNGLE_BUTTON"
+      },
+      "aliases": [
+        "junglebutton",
+        "jbutton",
+        "forestbutton",
+        "fbutton"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "ACACIA_BUTTON"
+      },
+      "aliases": [
+        "acaciabutton",
+        "abutton"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "DARK_OAK_BUTTON"
+      },
+      "aliases": [
+        "darkoakbutton",
+        "doakbutton",
+        "dobutton"
       ]
     },
     {
@@ -7037,11 +7458,44 @@
         "acaciatree",
         "acacialog",
         "acaciatrunk",
-        "acaciawood",
         "atree",
         "alog",
-        "atrunk",
+        "atrunk"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "ACACIA_WOOD"
+      },
+      "legacy": {
+        "id": 162,
+        "data": 12
+      },
+      "aliases": [
+        "acaciawood",
         "awood"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "STRIPPED_ACACIA_WOOD"
+      },
+      "aliases": [
+        "strippedacaciawood",
+        "strippedawood",
+        "sacaciawood",
+        "sawood"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "STRIPPED_ACACIA_LOG"
+      },
+      "aliases": [
+        "strippedacacialog",
+        "strippedalog",
+        "sacacialog",
+        "salog"
       ]
     },
     {
@@ -7057,16 +7511,53 @@
         "darkoaktree",
         "darkoaklog",
         "darkoaktrunk",
-        "darkoakwood",
         "doak",
         "doaktree",
         "doaklog",
         "doaktrunk",
-        "doakwood",
         "dotree",
         "dolog",
-        "dotrunk",
-        "dowood"
+        "dotrunk"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "DARK_OAK_WOOD"
+      },
+      "legacy": {
+        "id": 162,
+        "data": 13
+      },
+      "aliases": [
+        "dowood",
+        "darkoakwood",
+        "doakwood"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "STRIPPED_DARK_OAK_WOOD"
+      },
+      "aliases": [
+        "strippeddowood",
+        "strippeddarkoakwood",
+        "strippeddoakwood",
+        "sdowood",
+        "sdarkoakwood",
+        "sdoakwood"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "STRIPPED_DARK_OAK_LOG"
+      },
+      "aliases": [
+        "strippeddolog",
+        "strippeddarkoaklog",
+        "strippeddoaklog",
+        "sdolog",
+        "sdarkoaklog",
+        "sdoaklog"
       ]
     },
     {
@@ -7584,6 +8075,14 @@
         "packedice",
         "packice",
         "solidice"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "BLUE_ICE"
+      },
+      "aliases": [
+        "blueice"
       ]
     },
     {
@@ -10523,6 +11022,25 @@
     },
     {
       "spigot": {
+        "material": "TURTLE_HELMET"
+      },
+      "legacy": {
+        "id": 313,
+        "data": 0
+      },
+      "aliases": [
+        "turtlehelmet",
+        "turtlehelm",
+        "turtlehat",
+        "turtlecoif",
+        "thelmet",
+        "thelm",
+        "that",
+        "tcoif"
+      ]
+    },
+    {
+      "spigot": {
         "material": "GOLDEN_HELMET"
       },
       "legacy": {
@@ -10759,6 +11277,39 @@
         "waterbukkit",
         "wbucket",
         "wbukkit"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "COD_BUCKET"
+      },
+      "aliases": [
+        "codbucket"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "SALMON_BUCKET"
+      },
+      "aliases": [
+        "salmonbucket"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "PUFFERFISH_BUCKET"
+      },
+      "aliases": [
+        "pufferfishbucket",
+		"nemobucket"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "TROPICAL_FISH_BUCKET"
+      },
+      "aliases": [
+        "tropicalfishbucket"
       ]
     },
     {
@@ -11046,6 +11597,15 @@
       },
       "aliases": [
         "egg"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "TURTLE_EGG"
+      },
+      "aliases": [
+        "tegg",
+		"turtleegg"
       ]
     },
     {
@@ -12079,6 +12639,32 @@
     },
     {
       "spigot": {
+        "material": "DRIED_KELP"
+      },
+      "aliases": [
+        "driedkelp",
+        "drykelp"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "KELP"
+      },
+      "aliases": [
+        "kelp"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "DRIED_KELP_BLOCK"
+      },
+      "aliases": [
+        "drykelpblock",
+		"driedkelpblock"
+      ]
+    },
+    {
+      "spigot": {
         "material": "PUMPKIN_SEEDS"
       },
       "legacy": {
@@ -12434,6 +13020,24 @@
         "swiftpot",
         "speedpot",
         "swpot"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "POTION",
+        "potionData": {
+          "type": "SLOW_FALLING",
+          "extended": false,
+          "upgraded": false
+        }
+      },
+      "aliases": [
+        "slowfallingpotion",
+        "slowfallpotion",
+        "sfpotion",
+        "slowfallingpot",
+        "slowfallpot",
+        "sfpot"
       ]
     },
     {
@@ -13206,6 +13810,24 @@
     },
     {
       "spigot": {
+        "material": "POTION",
+        "potionData": {
+          "type": "SLOW_FALLING",
+          "extended": true,
+          "upgraded": false
+        }
+      },
+      "aliases": [
+        "slowfallingextendedpotion",
+        "slowfallextendedpotion",
+        "sfextendedpotion",
+        "slowfallingexpotion",
+        "slowfallexpotion",
+        "sfexpotion"
+      ]
+    },
+    {
+      "spigot": {
         "material": "SPLASH_POTION",
         "potionData": {
           "type": "MUNDANE",
@@ -13647,6 +14269,26 @@
         "splashthickpot",
         "splthickpotion",
         "splthickpot"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "SPLASH_POTION",
+        "potionData": {
+          "type": "SLOW_FALLING",
+          "extended": false,
+          "upgraded": false
+        }
+      },
+      "aliases": [
+        "splashslowfallingpotion",
+        "splashslowfallpotion",
+        "splslowfallingpotion",
+        "splslowfallpotion",
+        "splslowfallingpot",
+        "splslowfallpot",
+        "spsfpotion",
+        "spsfpot"
       ]
     },
     {
@@ -14403,6 +15045,34 @@
         "splinvisibleexpot",
         "splinvexpot",
         "spiepot"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "SPLASH_POTION",
+        "potionData": {
+          "type": "SLOW_FALLING",
+          "extended": true,
+          "upgraded": false
+        }
+      },
+      "aliases": [
+        "splashslowfallingpotionextended",
+        "splashslowfallpotionextended",
+        "splslowfallingpotionextended",
+        "splslowfallpotionextended",
+        "splslowfallingpotextended",
+        "splslowfallpotextended",
+        "spsfpotionextended",
+        "spsfpotextended",
+        "splashslowfallingpotionex",
+        "splashslowfallpotionex",
+        "splslowfallingpotionex",
+        "splslowfallpotionex",
+        "splslowfallingpotex",
+        "splslowfallpotex",
+        "spsfpotionex",
+        "spsfpotex"
       ]
     },
     {
@@ -16521,6 +17191,24 @@
       "spigot": {
         "material": "TIPPED_ARROW",
         "potionData": {
+          "type": "SLOW_FALLING",
+          "extended": false,
+          "upgraded": false
+        }
+      },
+      "aliases": [
+        "arrowslowfalling",
+        "slowfallingarrow",
+        "arrowslowfall",
+        "slowfallarrow",
+		    "sfarrow",
+        "arrowsf"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "TIPPED_ARROW",
+        "potionData": {
           "type": "REGEN",
           "extended": true,
           "upgraded": false
@@ -16735,6 +17423,24 @@
         "waterbreathingarrow2",
         "arrowwb2",
         "wbarrow2"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "TIPPED_ARROW",
+        "potionData": {
+          "type": "SLOW_FALLING",
+          "extended": true,
+          "upgraded": false
+        }
+      },
+      "aliases": [
+        "arrowslowfalling2",
+        "slowfallingarrow2",
+        "arrowslowfall2",
+        "slowfallarrow2",
+		    "sfarrow2",
+		    "arrowsf2"
       ]
     },
     {
@@ -18184,6 +18890,38 @@
     },
     {
       "spigot": {
+        "material": "LINGERING_POTION",
+        "potionData": {
+          "type": "SLOW_FALLING",
+          "extended": false,
+          "upgraded": false
+        }
+      },
+      "aliases": [
+        "aoepotslowfalling",
+        "slowfallingaoepot",
+        "aoepotslowfall",
+        "slowfallaoepot"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "LINGERING_POTION",
+        "potionData": {
+          "type": "SLOW_FALLING",
+          "extended": true,
+          "upgraded": false
+        }
+      },
+      "aliases": [
+        "aoepotslowfalling2",
+        "slowfallingaoepot2",
+        "aoepotslowfall2",
+        "slowfallaoepot2"
+      ]
+    },
+    {
+      "spigot": {
         "material": "SHIELD"
       },
       "legacy": {
@@ -18288,6 +19026,252 @@
       },
       "aliases": [
         "totem"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "TRIDENT"
+      },
+      "aliases": [
+        "spear"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "HEART_OF_THE_SEA"
+      },
+      "aliases": [
+        "heartofthesea",
+		    "heartofsea",
+		    "seaheart"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "TUBE_CORAL"
+      },
+      "aliases": [
+        "tubecoral"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "BRAIN_CORAL"
+      },
+      "aliases": [
+        "braincoral"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "BUBBLE_CORAL"
+      },
+      "aliases": [
+        "bubblecoral"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "FIRE_CORAL"
+      },
+      "aliases": [
+        "firecoral"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "HORN_CORAL"
+      },
+      "aliases": [
+        "horncoral"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "TUBE_CORAL_FAN"
+      },
+      "aliases": [
+        "tubecoralfan"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "BRAIN_CORAL_FAN"
+      },
+      "aliases": [
+        "braincoralfan"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "BUBBLE_CORAL_FAN"
+      },
+      "aliases": [
+        "bubblecoralfan"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "FIRE_CORAL_FAN"
+      },
+      "aliases": [
+        "firecoralfan"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "HORN_CORAL_FAN"
+      },
+      "aliases": [
+        "horncoralfan"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "DEAD_TUBE_CORAL_FAN"
+      },
+      "aliases": [
+        "deadtubecoralfan"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "DEAD_BRAIN_CORAL_FAN"
+      },
+      "aliases": [
+        "deadbraincoralfan"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "DEAD_BUBBLE_CORAL_FAN"
+      },
+      "aliases": [
+        "deadbubblecoralfan"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "DEAD_FIRE_CORAL_FAN"
+      },
+      "aliases": [
+        "deadfirecoralfan"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "DEAD_HORN_CORAL_FAN"
+      },
+      "aliases": [
+        "deadhorncoralfan"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "TUBE_CORAL_BLOCK"
+      },
+      "aliases": [
+        "tubecoralblock"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "BRAIN_CORAL_BLOCK"
+      },
+      "aliases": [
+        "braincoralblock"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "BUBBLE_CORAL_BLOCK"
+      },
+      "aliases": [
+        "bubblecoralblock"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "FIRE_CORAL_BLOCK"
+      },
+      "aliases": [
+        "firecoralblock"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "HORN_CORAL_BLOCK"
+      },
+      "aliases": [
+        "horncoral"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "DEAD_TUBE_CORAL_BLOCK"
+      },
+      "aliases": [
+        "deadtubecoralblock"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "DEAD_BRAIN_CORAL_BLOCK"
+      },
+      "aliases": [
+        "deadbraincoralblock"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "DEAD_BUBBLE_CORAL_BLOCK"
+      },
+      "aliases": [
+        "deadbubblecoralblock"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "DEAD_FIRE_CORAL_BLOCK"
+      },
+      "aliases": [
+        "deadfirecoralblock"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "DEAD_HORN_CORAL_BLOCK"
+      },
+      "aliases": [
+        "deadhorncoral"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "SEA_PICKLE"
+      },
+      "aliases": [
+        "seapickle",
+        "pickle"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "NAUTILUS_SHELL"
+      },
+      "aliases": [
+        "nautilusshell",
+		    "nautshell",
+		    "nshell"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "PHANTOM_MEMBRANE"
+      },
+      "aliases": [
+        "phantommembrane",
+		    "pmembrane"
       ]
     },
     {
