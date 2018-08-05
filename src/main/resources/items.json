@@ -3450,8 +3450,8 @@
         "birchwpressplate",
         "birchwpplate",
         "birchwplate",
-		   "bwplate",
-		   "bwoodplate"
+       "bwplate",
+       "bwoodplate"
       ]
     },
     {
@@ -3471,8 +3471,8 @@
         "sprucewpressplate",
         "sprucewpplate",
         "sprucewplate",
-		    "swplate",
-	      "swoodplate"
+        "swplate",
+        "swoodplate"
       ]
     },
     {
@@ -3492,8 +3492,8 @@
         "junglewpressplate",
         "junglewpplate",
         "junglewplate",
-		    "jwplate",
-		     "jwoodplate"
+        "jwplate",
+         "jwoodplate"
       ]
     },
     {
@@ -3513,8 +3513,8 @@
         "acaciawpressplate",
         "acaciawpplate",
         "acaciawplate",
-		    "awplate",
-		    "awoodplate"
+        "awplate",
+        "awoodplate"
       ]
     },
     {
@@ -3534,10 +3534,10 @@
         "darkoakwpressplate",
         "darkoakwpplate",
         "darkoakwplate",
-		    "darkowplate",
-		    "darkowoodplate",
-		    "dowplate",
-		    "dowoodplate"
+        "darkowplate",
+        "darkowoodplate",
+        "dowplate",
+        "dowoodplate"
       ]
     },
     {
@@ -3720,7 +3720,7 @@
       },
       "aliases": [
         "carvedpumpkin",
-		"cpumpkin"
+    "cpumpkin"
       ]
     },
     {
@@ -11301,7 +11301,7 @@
       },
       "aliases": [
         "pufferfishbucket",
-		"nemobucket"
+    "nemobucket"
       ]
     },
     {
@@ -11605,7 +11605,7 @@
       },
       "aliases": [
         "tegg",
-		"turtleegg"
+    "turtleegg"
       ]
     },
     {
@@ -12660,7 +12660,7 @@
       },
       "aliases": [
         "drykelpblock",
-		"driedkelpblock"
+    "driedkelpblock"
       ]
     },
     {
@@ -17201,7 +17201,7 @@
         "slowfallingarrow",
         "arrowslowfall",
         "slowfallarrow",
-		    "sfarrow",
+        "sfarrow",
         "arrowsf"
       ]
     },
@@ -17439,8 +17439,8 @@
         "slowfallingarrow2",
         "arrowslowfall2",
         "slowfallarrow2",
-		    "sfarrow2",
-		    "arrowsf2"
+        "sfarrow2",
+        "arrowsf2"
       ]
     },
     {
@@ -19042,8 +19042,8 @@
       },
       "aliases": [
         "heartofthesea",
-		    "heartofsea",
-		    "seaheart"
+        "heartofsea",
+        "seaheart"
       ]
     },
     {
@@ -19261,8 +19261,8 @@
       },
       "aliases": [
         "nautilusshell",
-		    "nautshell",
-		    "nshell"
+        "nautshell",
+        "nshell"
       ]
     },
     {
@@ -19271,7 +19271,7 @@
       },
       "aliases": [
         "phantommembrane",
-		    "pmembrane"
+        "pmembrane"
       ]
     },
     {
