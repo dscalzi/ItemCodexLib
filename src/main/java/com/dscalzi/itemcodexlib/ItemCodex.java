@@ -83,6 +83,9 @@ public class ItemCodex {
     
     private void updateLocalFile() {
         try(InputStream is = ItemCodex.class.getResourceAsStream("/" + CODEX_FILE_NAME)) {
+            if(!localFile.getParentFile().exists()) {
+                localFile.getParentFile().mkdirs();
+            }
             Files.copy(is, localFile.toPath(), StandardCopyOption.REPLACE_EXISTING);
         } catch (IOException e) {
             logger.severe("Failed to save " + CODEX_FILE_NAME + " locally.");
