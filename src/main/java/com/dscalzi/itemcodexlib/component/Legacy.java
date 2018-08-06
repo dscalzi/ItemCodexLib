@@ -142,4 +142,9 @@ public class Legacy {
         return true;
     }
     
+    @Override
+    public String toString() {
+        return this.id + ":" + this.data;
+    }
+    
 }
