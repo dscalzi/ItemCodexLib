@@ -10,10 +10,15 @@ import java.util.regex.Pattern;
 import org.bukkit.Bukkit;
 
 /**
- * Utility class to assist with MineCraft version semantics.
+ * Utility class to implement limited semver comparisons.
  * 
  * Supports {major}.{minor}.{revision}, where the revision is optional.
- * Does not support pre-release components.
+ * Supports prerelease components but DOES NOT distinguish between alpha,
+ * beta, pre, etc. Compares the number at the end of the prerelease component.
+ * 
+ * Ex.
+ * 
+ * 1.0.0-pre.7 > 1.0.0-pre.1
  */
 public class VersionUtil {
 
@@ -85,8 +90,11 @@ public class VersionUtil {
      * @since 1.0.0
      */
     public static int compare(String first, String second) {
-        String[] fPts = first.split("\\.");
-        String[] sPts = second.split("\\.");
+        String[] fC = first.split("-");
+        String[] sC = first.split("-");
+        
+        String[] fPts = fC[0].split("\\.");
+        String[] sPts = sC[0].split("\\.");
         
         // Compare Major
         int fMaj = Integer.parseInt(fPts[0]), sMaj = Integer.parseInt(sPts[0]);
@@ -106,7 +114,23 @@ public class VersionUtil {
                 } else if(sPts.length > 2) {
                     return -1;
                 } else {
-                    return 0;
+                    // Check prerelease components
+                    if(fC.length > 1) {
+                        if(sC.length > 1) {
+                            
+                            // Only supports 'pre'.
+                            int fComp = Integer.parseInt(fC[1].split("\\.")[1]);
+                            int sComp = Integer.parseInt(sC[1].split("\\.")[1]);
+                            
+                            return fComp - sComp;
+                        } else {
+                            return 1;
+                        }
+                    } else if(sC.length > 1) {
+                        return -1;
+                    } else {
+                        return 0;
+                    }
                 }
             } else {
                 return fMin - sMin;
