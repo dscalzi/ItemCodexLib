@@ -182,26 +182,15 @@
       "aliases": [
         "wood",
         "plank",
+        "planks",
         "woodenplank",
+        "woodenplanks",
         "woodplank",
-        "wplank",
-        "plankwooden",
-        "plankwood",
-        "plankw",
+        "woodplanks",
+        "oakplanks",
+        "oplanks",
         "oakplank",
-        "oakwoodenplank",
-        "oakwoodplank",
-        "oakwplank",
-        "oakplankwooden",
-        "oakplankwood",
-        "oakplankw",
-        "oplank",
-        "owoodenplank",
-        "owoodplank",
-        "owplank",
-        "oplankwooden",
-        "oplankwood",
-        "oplankw"
+        "oplank"
       ]
     },
     {
@@ -213,34 +202,10 @@
         "data": 1
       },
       "aliases": [
-        "pineplank",
-        "pinewoodenplank",
-        "pinewoodplank",
-        "pinewplank",
-        "pineplankwooden",
-        "pineplankwood",
-        "pineplankw",
-        "pplank",
-        "pwoodenplank",
-        "pwoodplank",
-        "pwplank",
-        "pplankwooden",
-        "pplankwood",
-        "pplankw",
+        "spruceplanks",
+        "splanks",
         "spruceplank",
-        "sprucewoodenplank",
-        "sprucewoodplank",
-        "sprucewplank",
-        "spruceplankwooden",
-        "spruceplankwood",
-        "spruceplankw",
-        "splank",
-        "swoodenplank",
-        "swoodplank",
-        "swplank",
-        "splankwooden",
-        "splankwood",
-        "splankw"
+        "splank"
       ]
     },
     {
@@ -252,20 +217,10 @@
         "data": 2
       },
       "aliases": [
+        "birchplanks",
+        "bplanks",
         "birchplank",
-        "birchwoodenplank",
-        "birchwoodplank",
-        "birchwplank",
-        "birchplankwooden",
-        "birchplankwood",
-        "birchplankw",
-        "bplank",
-        "bwoodenplank",
-        "bwoodplank",
-        "bwplank",
-        "bplankwooden",
-        "bplankwood",
-        "bplankw"
+        "bplank"
       ]
     },
     {
@@ -277,20 +232,10 @@
         "data": 3
       },
       "aliases": [
+        "jungleplanks",
+        "jplanks",
         "jungleplank",
-        "junglewoodenplank",
-        "junglewoodplank",
-        "junglewplank",
-        "jungleplankwooden",
-        "jungleplankwood",
-        "jungleplankw",
-        "jplank",
-        "jwoodenplank",
-        "jwoodplank",
-        "jwplank",
-        "jplankwooden",
-        "jplankwood",
-        "jplankw"
+        "jplank"
       ]
     },
     {
@@ -302,20 +247,10 @@
         "data": 4
       },
       "aliases": [
+        "acaciaplanks",
+        "aplanks",
         "acaciaplank",
-        "acaciawoodenplank",
-        "acaciawoodplank",
-        "acaciawplank",
-        "acaciaplankwooden",
-        "acaciaplankwood",
-        "acaciaplankw",
-        "aplank",
-        "awoodenplank",
-        "awoodplank",
-        "awplank",
-        "aplankwooden",
-        "aplankwood",
-        "aplankw"
+        "aplank"
       ]
     },
     {
@@ -327,27 +262,12 @@
         "data": 5
       },
       "aliases": [
+        "darkoakplanks",
+        "doakplanks",
+        "doplanks",
         "darkoakplank",
-        "darkoakwoodenplank",
-        "darkoakwoodplank",
-        "darkoakwplank",
-        "darkoakplankwooden",
-        "darkoakplankwood",
-        "darkoakplankw",
         "doakplank",
-        "doakwoodenplank",
-        "doakwoodplank",
-        "doakwplank",
-        "doakplankwooden",
-        "doakplankwood",
-        "doakplankw",
-        "doplank",
-        "dowoodenplank",
-        "dowoodplank",
-        "dowplank",
-        "doplankwooden",
-        "doplankwood",
-        "doplankw"
+        "doplank"
       ]
     },
     {
@@ -389,21 +309,11 @@
         "sprucelogsapling",
         "sprucetrunksapling",
         "sprucewoodsapling",
-        "pinesapling",
-        "pinetreesapling",
-        "pinelogsapling",
-        "pinetrunksapling",
-        "pinewoodsapling",
         "ssapling",
         "streesapling",
         "slogsapling",
         "strunksapling",
-        "swoodsapling",
-        "psapling",
-        "ptreesapling",
-        "plogsapling",
-        "ptrunksapling",
-        "pwoodsapling"
+        "swoodsapling"
       ]
     },
     {
@@ -721,20 +631,13 @@
         "data": 1
       },
       "aliases": [
-        "pine",
-        "pinetree",
-        "pinelog",
-        "pinetrunk",
         "spruce",
         "sprucetree",
         "sprucelog",
         "sprucetrunk",
         "stree",
         "slog",
-        "strunk",
-        "ptree",
-        "plog",
-        "ptrunk"
+        "strunk"
       ]
     },
     {
@@ -747,9 +650,7 @@
       },
       "aliases": [
         "sprucewood",
-        "swood",
-        "pinewood",
-        "pwood"
+        "swood"
       ]
     },
     {
@@ -759,11 +660,8 @@
       "aliases": [
         "strippedsprucewood",
         "strippedswood",
-        "strippedpinewood",
-        "spwood",
         "ssprucewood",
-        "sswood",
-        "spinewood"
+        "sswood"
       ]
     },
     {
@@ -773,11 +671,8 @@
       "aliases": [
         "strippedsprucelog",
         "strippedslog",
-        "strippedpinelog",
-        "splog",
         "ssprucelog",
-        "sslog",
-        "spinelog"
+        "sslog"
       ]
     },
     {
@@ -936,18 +831,6 @@
         "data": 1
       },
       "aliases": [
-        "pineleaves",
-        "pineleaf",
-        "pleaves",
-        "pleaf",
-        "pinetreeleaves",
-        "pinelogleaves",
-        "pinetrunkleaves",
-        "pinewoodleaves",
-        "ptreeleaves",
-        "plogleaves",
-        "ptrunkleaves",
-        "pwoodleaves",
         "spruceleaves",
         "spruceleaf",
         "sleaves",
@@ -967,15 +850,7 @@
         "streeleaf",
         "slogleaf",
         "strunkleaf",
-        "swoodleaf",
-        "pinetreeleaf",
-        "pinelogleaf",
-        "pinetrunkleaf",
-        "pinewoodleaf",
-        "ptreeleaf",
-        "plogleaf",
-        "ptrunkleaf",
-        "pwoodleaf"
+        "swoodleaf"
       ]
     },
     {
@@ -1308,14 +1183,8 @@
       },
       "aliases": [
         "grass",
-        "longgrass",
-        "tallgrass",
         "wildgrass",
-        "grasslong",
-        "grasstall",
         "grasswild",
-        "lgrass",
-        "tgrass",
         "wgrass"
       ]
     },
@@ -2012,15 +1881,12 @@
         "data": 2
       },
       "aliases": [
-        "woodenstonestep",
-        "woodstonestep",
-        "wstonestep",
-        "woodenstoneslab",
-        "woodstoneslab",
-        "wstoneslab",
-        "woodenstonehalfblock",
-        "woodstonehalfblock",
-        "wstonehalfblock"
+        "petrifiedoakslab",
+        "poslab",
+        "petrifiedoakhalfblock",
+        "pohalfblock",
+        "petrifiedoakstep",
+        "postep"
       ]
     },
     {
@@ -2314,13 +2180,7 @@
         "data": 0
       },
       "aliases": [
-        "oakwoodenstairs",
-        "oakwoodstairs",
-        "oakwstairs",
         "oakstairs",
-        "owoodenstairs",
-        "owoodstairs",
-        "owstairs",
         "ostairs"
       ]
     },
@@ -2513,18 +2373,6 @@
         "oakpressplate",
         "oakpplate",
         "oakplate",
-        "oakwoodpressureplate",
-        "oakwoodpressplate",
-        "oakwoodpplate",
-        "oakwoodplate",
-        "owoodpressureplate",
-        "owoodpressplate",
-        "owoodpplate",
-        "owoodplate",
-        "owpressureplate",
-        "owpressplate",
-        "owpplate",
-        "owplate",
         "opressureplate",
         "opressplate",
         "opplate",
@@ -2540,18 +2388,6 @@
         "birchpressplate",
         "birchpplate",
         "birchplate",
-        "birchwoodpressureplate",
-        "birchwoodpressplate",
-        "birchwoodpplate",
-        "birchwoodplate",
-        "bwoodpressureplate",
-        "bwoodpressplate",
-        "bwoodpplate",
-        "bwoodplate",
-        "bwpressureplate",
-        "bwpressplate",
-        "bwpplate",
-        "bwplate",
         "bpressureplate",
         "bpressplate",
         "bpplate",
@@ -2567,18 +2403,6 @@
         "sprucepressplate",
         "sprucepplate",
         "spruceplate",
-        "sprucewoodpressureplate",
-        "sprucewoodpressplate",
-        "sprucewoodpplate",
-        "sprucewoodplate",
-        "swoodpressureplate",
-        "swoodpressplate",
-        "swoodpplate",
-        "swoodplate",
-        "swpressureplate",
-        "swpressplate",
-        "swpplate",
-        "swplate",
         "spressureplate",
         "spressplate",
         "spplate",
@@ -2594,18 +2418,6 @@
         "junglepressplate",
         "junglepplate",
         "jungleplate",
-        "junglewoodpressureplate",
-        "junglewoodpressplate",
-        "junglewoodpplate",
-        "junglewoodplate",
-        "jwoodpressureplate",
-        "jwoodpressplate",
-        "jwoodpplate",
-        "jwoodplate",
-        "jwpressureplate",
-        "jwpressplate",
-        "jwpplate",
-        "jwplate",
         "jpressureplate",
         "jpressplate",
         "jpplate",
@@ -2621,18 +2433,6 @@
         "acaciapressplate",
         "acaciapplate",
         "acaciaplate",
-        "acaciawoodpressureplate",
-        "acaciawoodpressplate",
-        "acaciawoodpplate",
-        "acaciawoodplate",
-        "awoodpressureplate",
-        "awoodpressplate",
-        "awoodpplate",
-        "awoodplate",
-        "ajwpressureplate",
-        "awpressplate",
-        "awpplate",
-        "awplate",
         "apressureplate",
         "apressplate",
         "applate",
@@ -2648,18 +2448,6 @@
         "darkoakpressplate",
         "darkoakpplate",
         "darkoakplate",
-        "darkoakwoodpressureplate",
-        "darkoakwoodpressplate",
-        "darkoakwoodpplate",
-        "darkoakwoodplate",
-        "dowoodpressureplate",
-        "dowoodpressplate",
-        "dowoodpplate",
-        "dowoodplate",
-        "dowpressureplate",
-        "dowpressplate",
-        "dowpplate",
-        "dowplate",
         "dopressureplate",
         "dopressplate",
         "dopplate",
@@ -3327,19 +3115,11 @@
         "sprucetrapdoor",
         "sprucetdoor",
         "sprucedoortrap",
-        "pinetrapdoor",
-        "pinetdoor",
-        "pinedoortrap",
         "strapdoor",
         "stdoor",
         "sdoortrap",
-        "ptrapdoor",
-        "ptdoor",
-        "pdoortrap",
         "sprucehatch",
-        "shatch",
-        "pinehatch",
-        "phatch"
+        "shatch"
       ]
     },
     {
@@ -4144,30 +3924,12 @@
         "data": 0
       },
       "aliases": [
-        "woodenstep",
-        "woodstep",
-        "wstep",
-        "woodenslab",
-        "woodslab",
-        "wslab",
-        "woodenhalfblock",
-        "woodhalfblock",
-        "whalfblock",
-        "oakwoodenstep",
-        "oakwoodstep",
-        "oakwstep",
-        "oakstep",
-        "ostep",
-        "oakwoodenslab",
-        "oakwoodslab",
-        "oakwslab",
         "oakslab",
         "oslab",
-        "oakwoodenhalfblock",
-        "oakwoodhalfblock",
-        "oakwhalfblock",
         "oakhalfblock",
-        "ohalfblock"
+        "ohalfblock",
+        "oakstep",
+        "ostep"
       ]
     },
     {
@@ -4179,20 +3941,12 @@
         "data": 1
       },
       "aliases": [
-        "spslab",
-        "spstep",
-        "sprucewoodenstep",
-        "sprucewoodstep",
-        "sprucewstep",
-        "sprucestep",
-        "sprucewoodenslab",
-        "sprucewoodslab",
-        "sprucewslab",
         "spruceslab",
-        "sprucewoodenhalfblock",
-        "sprucewoodhalfblock",
-        "sprucewhalfblock",
-        "sprucehalfblock"
+        "sslab",
+        "sprucehalfblock",
+        "shalfblock",
+        "sprucestep",
+        "sstep"
       ]
     },
     {
@@ -4204,18 +3958,12 @@
         "data": 2
       },
       "aliases": [
-        "birchwoodenstep",
-        "birchwoodstep",
-        "birchwstep",
-        "birchstep",
-        "birchwoodenslab",
-        "birchwoodslab",
-        "birchwslab",
         "birchslab",
-        "birchwoodenhalfblock",
-        "birchwoodhalfblock",
-        "birchwhalfblock",
-        "birchhalfblock"
+        "bslab",
+        "birchhalfblock",
+        "bhalfblock",
+        "birchstep",
+        "bstep"
       ]
     },
     {
@@ -4227,21 +3975,12 @@
         "data": 3
       },
       "aliases": [
-        "junglewoodenstep",
-        "junglewoodstep",
-        "junglewstep",
-        "junglestep",
-        "jstep",
-        "junglewoodenslab",
-        "junglewoodslab",
-        "junglewslab",
         "jungleslab",
         "jslab",
-        "junglewoodenhalfblock",
-        "junglewoodhalfblock",
-        "junglewhalfblock",
         "junglehalfblock",
-        "jhalfblock"
+        "jhalfblock",
+        "junglestep",
+        "jstep"
       ]
     },
     {
@@ -4253,21 +3992,12 @@
         "data": 4
       },
       "aliases": [
-        "acaciawoodenstep",
-        "acaciawoodstep",
-        "acaciawstep",
-        "acaciastep",
-        "astep",
-        "acaciawoodenslab",
-        "acaciawoodslab",
-        "acaciawslab",
         "acaciaslab",
         "aslab",
-        "acaciawoodenhalfblock",
-        "acaciawoodhalfblock",
-        "acaciawhalfblock",
         "acaciahalfblock",
-        "ahalfblock"
+        "ahalfblock",
+        "acaciastep",
+        "astep"
       ]
     },
     {
@@ -4279,21 +4009,12 @@
         "data": 5
       },
       "aliases": [
-        "darkoakwoodenstep",
-        "darkoakwoodstep",
-        "darkoakwstep",
-        "darkoakstep",
-        "dostep",
-        "darkoakwoodenslab",
-        "darkoakwoodslab",
-        "darkoakwslab",
         "darkoakslab",
         "doslab",
-        "darkoakwoodenhalfblock",
-        "darkoakwoodhalfblock",
-        "darkoakwhalfblock",
         "darkoakhalfblock",
-        "dohalfblock"
+        "dohalfblock",
+        "darkoakstep",
+        "dostep"
       ]
     },
     {
@@ -4407,13 +4128,7 @@
         "data": 0
       },
       "aliases": [
-        "sprucewoodenstairs",
-        "sprucewoodstairs",
-        "sprucewstairs",
         "sprucestairs",
-        "swoodenstairs",
-        "swoodstairs",
-        "swstairs",
         "sstairs"
       ]
     },
@@ -4426,13 +4141,7 @@
         "data": 0
       },
       "aliases": [
-        "birchwoodenstairs",
-        "birchwoodstairs",
-        "birchwstairs",
         "birchstairs",
-        "bwoodenstairs",
-        "bwoodstairs",
-        "bwstairs",
         "bstairs"
       ]
     },
@@ -4445,13 +4154,7 @@
         "data": 0
       },
       "aliases": [
-        "junglewoodenstairs",
-        "junglewoodstairs",
-        "junglewstairs",
         "junglestairs",
-        "jwoodenstairs",
-        "jwoodstairs",
-        "jwstairs",
         "jstairs"
       ]
     },
@@ -4584,9 +4287,9 @@
         "data": 0
       },
       "aliases": [
-        "woodenbutton",
         "oakbutton",
-        "obutton"
+        "obutton",
+        "woodenbutton"
       ]
     },
     {
@@ -4595,9 +4298,7 @@
       },
       "aliases": [
         "sprucebutton",
-        "sbutton",
-        "pinebutton",
-        "pbutton"
+        "sbutton"
       ]
     },
     {
@@ -6058,13 +5759,7 @@
         "data": 0
       },
       "aliases": [
-        "acaciawoodenstairs",
-        "acaciawoodstairs",
-        "acaciawstairs",
         "acaciastairs",
-        "awoodenstairs",
-        "awoodstairs",
-        "awstairs",
         "astairs"
       ]
     },
@@ -6077,17 +5772,8 @@
         "data": 0
       },
       "aliases": [
-        "darkoakwoodenstairs",
-        "darkoakwoodstairs",
-        "darkoakwstairs",
         "darkoakstairs",
-        "doakwoodenstairs",
-        "doakwoodstairs",
-        "doakwstairs",
         "doakstairs",
-        "dowoodenstairs",
-        "dowoodstairs",
-        "dowstairs",
         "dostairs"
       ]
     },
@@ -6176,7 +5862,31 @@
       },
       "aliases": [
         "pbrick",
+        "prisbrick",
         "prismarinebrick"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "PRISMARINE_BRICK_SLAB"
+      },
+      "aliases": [
+        "pbrickslab",
+        "prisbrickslab",
+        "prismarinebrickslab",
+        "pbrickstep",
+        "prisbrickstep",
+        "prismarinebrickstep"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "PRISMARINE_BRICK_STAIRS"
+      },
+      "aliases": [
+        "pbrickstairs",
+        "prisbrickstairs",
+        "prismarinebrickstairs"
       ]
     },
     {
@@ -6634,17 +6344,16 @@
         "data": 2
       },
       "aliases": [
-        "longtallgrass",
-        "extratallgrass",
-        "doubletallgrass",
-        "largetallgrass",
-        "longtgrass",
-        "extratgrass",
-        "doubletgrass",
-        "largetgrass",
-        "ltgrass",
-        "etgrass",
-        "dtgrass"
+        "tallgrass",
+        "tallwildgrass",
+        "tallgrasswild",
+        "twgrass",
+        "tgrass",
+        "longgrass",
+        "longwildgrass",
+        "longgrasswild",
+        "lwgrass",
+        "lgrass"
       ]
     },
     {
@@ -9735,10 +9444,10 @@
         "data": 0
       },
       "aliases": [
-        "woodendoor",
-        "door",
         "oakdoor",
-        "odoor"
+        "odoor",
+        "woodendoor",
+        "door"
       ]
     },
     {
@@ -9790,8 +9499,7 @@
         "material": "PUFFERFISH_BUCKET"
       },
       "aliases": [
-        "pufferfishbucket",
-    "nemobucket"
+        "pufferfishbucket"
       ]
     },
     {
@@ -9799,7 +9507,8 @@
         "material": "TROPICAL_FISH_BUCKET"
       },
       "aliases": [
-        "tropicalfishbucket"
+        "tropicalfishbucket",
+        "nemobucket"
       ]
     },
     {
@@ -13771,6 +13480,7 @@
         "data": 50
       },
       "aliases": [
+        "creeperspawnegg",
         "creeperegg",
         "eggcreeper"
       ]
@@ -13784,6 +13494,7 @@
         "data": 51
       },
       "aliases": [
+        "skeletonspawnegg",
         "skeletonegg",
         "eggskeleton"
       ]
@@ -13797,6 +13508,7 @@
         "data": 52
       },
       "aliases": [
+        "spiderspawnegg",
         "spideregg",
         "eggspider"
       ]
@@ -13810,6 +13522,7 @@
         "data": 54
       },
       "aliases": [
+        "zombiespawnegg",
         "zombieegg",
         "eggzombie"
       ]
@@ -13823,6 +13536,7 @@
         "data": 55
       },
       "aliases": [
+        "slimespawnegg",
         "slimeegg",
         "eggslime"
       ]
@@ -13836,6 +13550,7 @@
         "data": 56
       },
       "aliases": [
+        "ghastspawnegg",
         "ghastegg",
         "eggghast"
       ]
@@ -13849,6 +13564,7 @@
         "data": 57
       },
       "aliases": [
+        "zombiepigmanspawnegg",
         "zombiepigmanegg",
         "zpigmanegg",
         "pigmanegg",
@@ -13882,6 +13598,7 @@
         "data": 58
       },
       "aliases": [
+        "endermanspawnegg",
         "endermanegg",
         "eggenderman"
       ]
@@ -13895,6 +13612,7 @@
         "data": 59
       },
       "aliases": [
+        "cavespiderspawnegg",
         "eggcavespider",
         "cavespideregg"
       ]
@@ -13908,6 +13626,7 @@
         "data": 60
       },
       "aliases": [
+        "silverfishspawnegg",
         "silverfishegg",
         "eggsilverfish"
       ]
@@ -13921,6 +13640,7 @@
         "data": 61
       },
       "aliases": [
+        "blazespawnegg",
         "blazeegg",
         "eggblaze"
       ]
@@ -13934,6 +13654,7 @@
         "data": 62
       },
       "aliases": [
+        "magmacubespawnegg",
         "lavaslimeegg",
         "lavacubeegg",
         "magmacubeegg",
@@ -13953,6 +13674,7 @@
         "data": 65
       },
       "aliases": [
+        "batspawnegg",
         "bategg",
         "eggbat"
       ]
@@ -13966,6 +13688,7 @@
         "data": 66
       },
       "aliases": [
+        "witchspawnegg",
         "witchegg",
         "eggwitch"
       ]
@@ -13979,8 +13702,8 @@
         "data": 67
       },
       "aliases": [
-        "endermiteegg",
         "endermitespawnegg",
+        "endermiteegg",
         "eggendermite"
       ]
     },
@@ -13993,8 +13716,8 @@
         "data": 68
       },
       "aliases": [
-        "guardianegg",
         "guardianspawnegg",
+        "guardianegg",
         "eggguardian"
       ]
     },
@@ -14007,9 +13730,9 @@
         "data": 69
       },
       "aliases": [
+        "shulkerspawnegg",
         "spawneggshulker",
         "spawnshulker",
-        "shulkerspawnegg",
         "shulkeregg",
         "shulkegg"
       ]
@@ -14023,6 +13746,7 @@
         "data": 90
       },
       "aliases": [
+        "pigspawnegg",
         "pigegg",
         "eggpig"
       ]
@@ -14036,6 +13760,7 @@
         "data": 91
       },
       "aliases": [
+        "sheepspawnegg",
         "sheepegg",
         "eggsheep"
       ]
@@ -14049,6 +13774,7 @@
         "data": 92
       },
       "aliases": [
+        "cowspawnegg",
         "cowegg",
         "eggcow"
       ]
@@ -14062,6 +13788,7 @@
         "data": 93
       },
       "aliases": [
+        "chickenspawnegg",
         "chickenegg",
         "eggchicken"
       ]
@@ -14075,6 +13802,7 @@
         "data": 94
       },
       "aliases": [
+        "squidspawnegg",
         "squidegg",
         "eggsquid"
       ]
@@ -14088,6 +13816,7 @@
         "data": 95
       },
       "aliases": [
+        "wolfspawnegg",
         "wolfegg",
         "eggwolf"
       ]
@@ -14101,6 +13830,8 @@
         "data": 96
       },
       "aliases": [
+        "mooshroomspawnegg",
+        "mushroomcowspawnegg",
         "mooshroomegg",
         "mushroomcowegg",
         "eggmooshroom",
@@ -14116,6 +13847,7 @@
         "data": 98
       },
       "aliases": [
+        "ocelotspawnegg",
         "ocelotegg",
         "eggocelot"
       ]
@@ -14129,6 +13861,7 @@
         "data": 100
       },
       "aliases": [
+        "horsespawnegg",
         "egghorse",
         "horseegg"
       ]
@@ -14142,8 +13875,8 @@
         "data": 101
       },
       "aliases": [
-        "rabbitegg",
-        "rabbitspawnegg"
+        "rabbitspawnegg",
+        "rabbitegg"
       ]
     },
     {
@@ -14155,13 +13888,13 @@
         "data": 102
       },
       "aliases": [
+        "polarbearspawnegg",
         "spawneggpolarbear",
         "spawneggpolar",
         "spawneggbear",
         "spawnpolarbear",
         "spawnpolar",
         "spawnbear",
-        "polarbearspawnegg",
         "polarspawnegg",
         "bearspawnegg",
         "polarbearegg",
@@ -14178,7 +13911,9 @@
         "data": 105
       },
       "aliases": [
-        "parrot"
+        "parrotspawnegg",
+        "parrotegg",
+        "eggparrot"
       ]
     },
     {
@@ -14190,8 +13925,98 @@
         "data": 120
       },
       "aliases": [
+        "villagerspawnegg",
         "villageregg",
         "eggvillager"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "COD_SPAWN_EGG"
+      },
+      "aliases": [
+        "codspawnegg",
+        "codegg",
+        "eggcod"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "DOLPHIN_SPAWN_EGG"
+      },
+      "aliases": [
+        "dolphinspawnegg",
+        "dolphinegg",
+        "eggdolphin"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "DROWNED_SPAWN_EGG"
+      },
+      "aliases": [
+        "drownedspawnegg",
+        "drownedegg",
+        "eggdrowned",
+        "drownedzombiespawnegg",
+        "drownedzombieegg",
+        "eggdrownedzombie"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "PHANTOM_SPAWN_EGG"
+      },
+      "aliases": [
+        "phantomspawnegg",
+        "phantomegg",
+        "eggphantom"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "PUFFERFISH_SPAWN_EGG"
+      },
+      "aliases": [
+        "pufferfishspawnegg",
+        "pufferfishegg",
+        "eggpufferfish"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "SALMON_SPAWN_EGG"
+      },
+      "aliases": [
+        "salmonspawnegg",
+        "salmonegg",
+        "eggsalmon"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "TROPICAL_FISH_SPAWN_EGG"
+      },
+      "aliases": [
+        "tropicalfishspawnegg",
+        "tropicalfishegg",
+        "eggtropicalfish",
+        "nemospawnegg",
+        "nemoegg",
+        "eggnemo",
+        "clownfishspawnegg",
+        "clownfishegg",
+        "eggclownfish"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "TURTLE_SPAWN_EGG"
+      },
+      "aliases": [
+        "turtlespawnegg",
+        "turtleegg",
+        "eggturtle"
       ]
     },
     {
@@ -17397,7 +17222,7 @@
       },
       "aliases": [
         "spruceboat",
-        "pineboat"
+        "sboat"
       ]
     },
     {
@@ -17472,6 +17297,21 @@
       "aliases": [
         "seagrass",
         "sgrass"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "TALL_SEAGRASS"
+      },
+      "aliases": [
+        "tallseagrass",
+        "tallsgrass",
+        "tseagrass",
+        "tsgrass",
+        "longseagrass",
+        "longsgrass",
+        "lseagrass",
+        "lsgrass"
       ]
     },
     {
