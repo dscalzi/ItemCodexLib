@@ -12,8 +12,6 @@
       },
       "aliases": [
         "stone",
-        "sstone",
-        "smoothstone",
         "rock"
       ]
     },
@@ -1185,12 +1183,10 @@
         "data": 2
       },
       "aliases": [
-        "smstone",
-        "smoothsandstone",
-        "smoothsastone",
-        "ssandstone",
-        "smsastone",
-        "ssastone"
+        "cutsandstone",
+        "cutsastone",
+        "csandstone",
+        "csastone"
       ]
     },
     {
@@ -1964,54 +1960,7 @@
         "data": 9
       },
       "aliases": [
-        "smoothsandstonedoubleslab",
-        "ssandstonedoubleslab",
-        "ssstonedoubleslab",
-        "sssdoubleslab",
-        "smoothsandstonedoublestep",
-        "ssandstonedoublestep",
-        "ssstonedoublestep",
-        "sssdoublestep",
-        "smoothsandstonedoublehalfblock",
-        "ssandstonedoublehalfblock",
-        "ssstonedoublehalfblock",
-        "sssdoublehalfblock",
-        "smoothsandstonedslab",
-        "ssandstonedslab",
-        "ssstonedslab",
-        "sssdslab",
-        "smoothsandstonedstep",
-        "ssandstonedstep",
-        "ssstonedstep",
-        "sssdstep",
-        "smoothsandstonedhalfblock",
-        "ssandstonedhalfblock",
-        "ssstonedhalfblock",
-        "sssdhalfblock",
-        "doublesmoothsandstoneslab",
-        "doublessandstoneslab",
-        "doublessstoneslab",
-        "doublesssslab",
-        "doublesmoothsandstonestep",
-        "doublessandstonestep",
-        "doublessstonestep",
-        "doublesssstep",
-        "doublesmoothsandstonehalfblock",
-        "doublessandstonehalfblock",
-        "doublessstonehalfblock",
-        "doublessshalfblock",
-        "dsmoothsandstoneslab",
-        "dssandstoneslab",
-        "dssstoneslab",
-        "dsssslab",
-        "dsmoothsandstonestep",
-        "dssandstonestep",
-        "dssstonestep",
-        "dsssstep",
-        "dsmoothsandstonehalfblock",
-        "dssandstonehalfblock",
-        "dssstonehalfblock",
-        "dssshalfblock"
+        "smoothsandstone"
       ]
     },
     {
@@ -2023,15 +1972,12 @@
         "data": 0
       },
       "aliases": [
-        "smoothstonestep",
         "stonestep",
         "sstep",
         "step",
-        "smoothstoneslab",
         "stoneslab",
         "sslab",
         "slab",
-        "smoothstonehalfblock",
         "stonehalfblock",
         "shalfblock",
         "halfblock"
@@ -2551,15 +2497,7 @@
         "spressureplate",
         "spressplate",
         "spplate",
-        "splate",
-        "smoothstonepressureplate",
-        "smoothstonepressplate",
-        "smoothstonepplate",
-        "smoothstoneplate",
-        "sstonepressureplate",
-        "sstonepressplate",
-        "sstonepplate",
-        "sstoneplate"
+        "splate"
       ]
     },
     {
@@ -2777,8 +2715,6 @@
       },
       "aliases": [
         "stonebutton",
-        "smoothstonebutton",
-        "sstonebutton",
         "sbutton",
         "button"
       ]
@@ -3480,19 +3416,12 @@
       },
       "aliases": [
         "infestedstone",
-        "infestedsmoothstone",
-        "infestedsstone",
         "silverfish",
-        "silverfishsmoothstone",
-        "silverfishsstone",
-        "sfishsmoothstone",
-        "sfishsstone",
-        "fishsmoothstone",
-        "fishsstone",
-        "sfsmoothstone",
-        "sfsstone",
-        "trapsmoothstone",
-        "trapsstone"
+        "silverfishstone",
+        "sfishstone",
+        "fishstone",
+        "sfstone",
+        "trapstone"
       ]
     },
     {
@@ -6813,9 +6742,9 @@
         "data": 2
       },
       "aliases": [
-        "srstone",
-        "redsandstonesmooth",
-        "smoothredsandstone"
+        "crstone",
+        "redsandstonecut",
+        "cutredsandstone"
       ]
     },
     {
