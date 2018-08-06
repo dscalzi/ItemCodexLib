@@ -292,21 +292,7 @@
         "jwplank",
         "jplankwooden",
         "jplankwood",
-        "jplankw",
-        "forestplank",
-        "forestwoodenplank",
-        "forestwoodplank",
-        "forestwplank",
-        "forestplankwooden",
-        "forestplankwood",
-        "forestplankw",
-        "fplank",
-        "fwoodenplank",
-        "fwoodplank",
-        "fwplank",
-        "fplankwooden",
-        "fplankwood",
-        "fplankw"
+        "jplankw"
       ]
     },
     {
@@ -457,21 +443,11 @@
         "junglelogsapling",
         "jungletrunksapling",
         "junglewoodsapling",
-        "forestsapling",
-        "foresttreesapling",
-        "forestlogsapling",
-        "foresttrunksapling",
-        "forestwoodsapling",
         "jsapling",
         "jtreesapling",
         "jlogsapling",
         "jtrunksapling",
-        "jwoodsapling",
-        "fsapling",
-        "ftreesapling",
-        "flogsapling",
-        "ftrunksapling",
-        "fwoodsapling"
+        "jwoodsapling"
       ]
     },
     {
@@ -872,16 +848,9 @@
         "junglelog",
         "jungletrunk",
         "jungle",
-        "forest",
-        "foresttree",
-        "forestlog",
-        "foresttrunk",
         "jtree",
         "jlog",
-        "jtrunk",
-        "ftree",
-        "flog",
-        "ftrunk"
+        "jtrunk"
       ]
     },
     {
@@ -894,9 +863,7 @@
       },
       "aliases": [
         "junglewood",
-        "jwood",
-        "forestwood",
-        "fwood"
+        "jwood"
       ]
     },
     {
@@ -906,12 +873,8 @@
       "aliases": [
         "strippedjunglewood",
         "strippedjwood",
-        "strippedforestwood",
-        "strippedfwood",
         "sjunglewood",
-        "sjwood",
-        "sforestwood",
-        "sfwood"
+        "sjwood"
       ]
     },
     {
@@ -921,12 +884,8 @@
       "aliases": [
         "strippedjunglelog",
         "strippedjlog",
-        "strippedforestlog",
-        "strippedflog",
         "sjunglelog",
-        "sjlog",
-        "sforestlog",
-        "sflog"
+        "sjlog"
       ]
     },
     {
@@ -1073,18 +1032,6 @@
         "jlogleaves",
         "jtrunkleaves",
         "jwoodleaves",
-        "forestleaves",
-        "forestleaf",
-        "fleaves",
-        "fleaf",
-        "foresttreeleaves",
-        "forestlogleaves",
-        "foresttrunkleaves",
-        "forestwoodleaves",
-        "ftreeleaves",
-        "flogleaves",
-        "ftrunkleaves",
-        "fwoodleaves",
         "jungletreeleaf",
         "junglelogleaf",
         "jungletrunkleaf",
@@ -1092,15 +1039,7 @@
         "jtreeleaf",
         "jlogleaf",
         "jtrunkleaf",
-        "jwoodleaf",
-        "foresttreeleaf",
-        "forestlogleaf",
-        "foresttrunkleaf",
-        "forestwoodleaf",
-        "ftreeleaf",
-        "flogleaf",
-        "ftrunkleaf",
-        "fwoodleaf"
+        "jwoodleaf"
       ]
     },
     {
@@ -3556,13 +3495,7 @@
         "data": 0
       },
       "aliases": [
-        "woodenfence",
         "fence",
-        "woodfence",
-        "wfence",
-        "fencewooden",
-        "fencewood",
-        "fencew",
         "oakfence",
         "ofence"
       ]
@@ -4055,16 +3988,15 @@
         "data": 0
       },
       "aliases": [
-        "oaktrapdoor",
-        "otrapdoor",
-        "owoodtrapdoor",
         "trapdoor",
-        "doortrap",
-        "hatch",
-        "tdoor",
-        "doort",
-        "trapd",
-        "dtrap"
+        "oaktrapdoor",
+        "oaktdoor",
+        "oakdoortrap",
+        "otrapdoor",
+        "otdoor",
+        "odoortrap",
+        "oakhatch",
+        "ohatch"
       ]
     },
     {
@@ -4083,7 +4015,11 @@
         "sdoortrap",
         "ptrapdoor",
         "ptdoor",
-        "pdoortrap"
+        "pdoortrap",
+        "sprucehatch",
+        "shatch",
+        "pinehatch",
+        "phatch"
       ]
     },
     {
@@ -4096,7 +4032,9 @@
         "birchdoortrap",
         "btrapdoor",
         "btdoor",
-        "bdoortrap"
+        "bdoortrap",
+        "birchhatch",
+        "bhatch"
       ]
     },
     {
@@ -4110,12 +4048,8 @@
         "jtrapdoor",
         "jtdoor",
         "jdoortrap",
-        "foresttrapdoor",
-        "foresttdoor",
-        "forestdoortrap",
-        "ftrapdoor",
-        "ftdoor",
-        "fdoortrap"
+        "junglehatch",
+        "jhatch"
       ]
     },
     {
@@ -4128,7 +4062,9 @@
         "acaciadoortrap",
         "atrapdoor",
         "atdoor",
-        "adoortrap"
+        "adoortrap",
+        "acaciahatch",
+        "ahatch"
       ]
     },
     {
@@ -4144,7 +4080,10 @@
         "doakdoortrap",
         "dotrapdoor",
         "dotdoor",
-        "dodoortrap"
+        "dodoortrap",
+        "darkoakhatch",
+        "doakhatch",
+        "dohatch"
       ]
     },
     {
@@ -4636,17 +4575,10 @@
         "data": 0
       },
       "aliases": [
-        "woodgate",
-        "woodenfencegate",
-        "wfencegate",
-        "woodfencegate",
-        "woodengate",
-        "wgate",
-        "gate",
-        "gardengate",
-        "ggate",
-        "fencegate",
-        "fgate"
+        "oakfencegate",
+        "ofencegate",
+        "ogate",
+        "oakgate"
       ]
     },
     {
@@ -5175,52 +5107,7 @@
         "jungledwhalfblock",
         "jungledoublehalfblock",
         "jungledhalfblock",
-        "jdhalfblock",
-        "forestwoodendoublehalfblock",
-        "forestwoodendhalfblock",
-        "forestwooddoublehalfblock",
-        "forestwooddhalfblock",
-        "forestwdoublehalfblock",
-        "forestwdhalfblock",
-        "forestdoublewoodenhalfblock",
-        "forestdwoodenhalfblock",
-        "forestdoublewoodhalfblock",
-        "forestdwoodhalfblock",
-        "forestdoublewhalfblock",
-        "forestdwhalfblock",
-        "forestdoublehalfblock",
-        "forestdhalfblock",
-        "fdhalfblock",
-        "forestwoodendoublestep",
-        "forestwoodendstep",
-        "forestwooddoublestep",
-        "forestwooddstep",
-        "forestwdoublestep",
-        "forestwdstep",
-        "forestdoublewoodenstep",
-        "forestdwoodenstep",
-        "forestdoublewoodstep",
-        "forestdwoodstep",
-        "forestdoublewstep",
-        "forestdwstep",
-        "forestdoublestep",
-        "forestdstep",
-        "fdstep",
-        "forestwoodendoubleslab",
-        "forestwoodendslab",
-        "forestwooddoubleslab",
-        "forestwooddslab",
-        "forestwdoubleslab",
-        "forestwdslab",
-        "forestdoublewoodenslab",
-        "forestdwoodenslab",
-        "forestdoublewoodslab",
-        "forestdwoodslab",
-        "forestdoublewslab",
-        "forestdwslab",
-        "forestdoubleslab",
-        "forestdslab",
-        "fdslab"
+        "jdhalfblock"
       ]
     },
     {
@@ -5441,22 +5328,7 @@
         "junglewoodhalfblock",
         "junglewhalfblock",
         "junglehalfblock",
-        "jhalfblock",
-        "forestwoodenstep",
-        "forestwoodstep",
-        "forestwstep",
-        "foreststep",
-        "fstep",
-        "forestwoodenslab",
-        "forestwoodslab",
-        "forestwslab",
-        "forestslab",
-        "fslab",
-        "forestwoodenhalfblock",
-        "forestwoodhalfblock",
-        "forestwhalfblock",
-        "foresthalfblock",
-        "fhalfblock"
+        "jhalfblock"
       ]
     },
     {
@@ -5670,21 +5542,11 @@
         "junglewstairs",
         "junglestairs",
         "jstairs",
-        "forestwoodenstairs",
-        "forestwoodstairs",
-        "forestwstairs",
-        "foreststairs",
-        "fstairs",
         "junglewoodenstair",
         "junglewoodstair",
         "junglewstair",
         "junglestair",
-        "jstair",
-        "forestwoodenstair",
-        "forestwoodstair",
-        "forestwstair",
-        "foreststair",
-        "fstair"
+        "jstair"
       ]
     },
     {
@@ -5817,12 +5679,6 @@
       },
       "aliases": [
         "woodenbutton",
-        "woodenplankbutton",
-        "woodplankbutton",
-        "wplankbutton",
-        "plankbutton",
-        "woodbutton",
-        "wbutton",
         "oakbutton",
         "obutton"
       ]
@@ -5853,9 +5709,7 @@
       },
       "aliases": [
         "junglebutton",
-        "jbutton",
-        "forestbutton",
-        "fbutton"
+        "jbutton"
       ]
     },
     {
@@ -8169,7 +8023,8 @@
         "data": 0
       },
       "aliases": [
-        "sprucedoor"
+        "sprucedoor",
+        "sdoor"
       ]
     },
     {
@@ -8181,7 +8036,8 @@
         "data": 0
       },
       "aliases": [
-        "birchdoor"
+        "birchdoor",
+        "bdoor"
       ]
     },
     {
@@ -8193,7 +8049,8 @@
         "data": 0
       },
       "aliases": [
-        "jungledoor"
+        "jungledoor",
+        "jdoor"
       ]
     },
     {
@@ -8205,7 +8062,8 @@
         "data": 0
       },
       "aliases": [
-        "acaciadoor"
+        "acaciadoor",
+        "adoor"
       ]
     },
     {
@@ -8217,7 +8075,9 @@
         "data": 0
       },
       "aliases": [
-        "darkoakdoor"
+        "darkoakdoor",
+        "doakdoor",
+        "dodoor"
       ]
     },
     {
@@ -10975,8 +10835,6 @@
       },
       "aliases": [
         "woodendoor",
-        "wooddoor",
-        "wdoor",
         "door",
         "oakdoor",
         "odoor"
@@ -11148,7 +11006,9 @@
         "data": 0
       },
       "aliases": [
-        "boat"
+        "boat",
+        "oakboat",
+        "oboat"
       ]
     },
     {
@@ -16416,66 +16276,6 @@
     },
     {
       "spigot": {
-        "material": "SPRUCE_DOOR"
-      },
-      "legacy": {
-        "id": 427,
-        "data": 0
-      },
-      "aliases": [
-        "sprucedooritem"
-      ]
-    },
-    {
-      "spigot": {
-        "material": "BIRCH_DOOR"
-      },
-      "legacy": {
-        "id": 428,
-        "data": 0
-      },
-      "aliases": [
-        "birchdooritem"
-      ]
-    },
-    {
-      "spigot": {
-        "material": "JUNGLE_DOOR"
-      },
-      "legacy": {
-        "id": 429,
-        "data": 0
-      },
-      "aliases": [
-        "jungledooritem"
-      ]
-    },
-    {
-      "spigot": {
-        "material": "ACACIA_DOOR"
-      },
-      "legacy": {
-        "id": 430,
-        "data": 0
-      },
-      "aliases": [
-        "acaciadooritem"
-      ]
-    },
-    {
-      "spigot": {
-        "material": "DARK_OAK_DOOR"
-      },
-      "legacy": {
-        "id": 431,
-        "data": 0
-      },
-      "aliases": [
-        "darkoakdooritem"
-      ]
-    },
-    {
-      "spigot": {
         "material": "CHORUS_FRUIT"
       },
       "legacy": {
@@ -18695,7 +18495,8 @@
         "data": 0
       },
       "aliases": [
-        "spruceboat"
+        "spruceboat",
+        "pineboat"
       ]
     },
     {
@@ -18707,7 +18508,8 @@
         "data": 0
       },
       "aliases": [
-        "birchboat"
+        "birchboat",
+        "bboat"
       ]
     },
     {
@@ -18719,7 +18521,8 @@
         "data": 0
       },
       "aliases": [
-        "jungleboat"
+        "jungleboat",
+        "jboat"
       ]
     },
     {
@@ -18731,7 +18534,8 @@
         "data": 0
       },
       "aliases": [
-        "acaciaboat"
+        "acaciaboat",
+        "aboat"
       ]
     },
     {
@@ -18744,7 +18548,7 @@
       },
       "aliases": [
         "darkoakboat",
-        "totemofundying"
+        "doboat"
       ]
     },
     {
@@ -18756,7 +18560,8 @@
         "data": 0
       },
       "aliases": [
-        "totem"
+        "totem",
+        "totemofundying"
       ]
     },
     {
@@ -19027,7 +18832,12 @@
         "data": 0
       },
       "aliases": [
-        "ironnugget"
+        "ironnugget",
+        "inugget",
+        "ironpebble",
+        "ipebble",
+        "ironball",
+        "iball"
       ]
     },
     {
