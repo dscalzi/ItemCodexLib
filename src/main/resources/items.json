@@ -435,20 +435,6 @@
     },
     {
       "spigot": {
-        "material": "WATER"
-      },
-      "legacy": {
-        "id": 9,
-        "data": 0
-      },
-      "aliases": [
-        "stationarywater",
-        "stillwater",
-        "swater"
-      ]
-    },
-    {
-      "spigot": {
         "material": "LAVA"
       },
       "legacy": {
@@ -457,20 +443,6 @@
       },
       "aliases": [
         "lava"
-      ]
-    },
-    {
-      "spigot": {
-        "material": "LAVA"
-      },
-      "legacy": {
-        "id": 11,
-        "data": 0
-      },
-      "aliases": [
-        "stationarylava",
-        "stilllava",
-        "slava"
       ]
     },
     {
@@ -12024,7 +11996,72 @@
         "sfextendedpotion",
         "slowfallingexpotion",
         "slowfallexpotion",
-        "sfexpotion"
+        "sfexpotion",
+        "slowfallingexpot",
+        "slowfallexpot",
+        "sfexpot"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "POTION",
+        "potionData": {
+          "type": "TURTLE_MASTER",
+          "extended": false,
+          "upgraded": false
+        }
+      },
+      "aliases": [
+        "turtlemasterpotion",
+        "tmpotion",
+        "turtlemasterpot",
+        "tmpot"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "POTION",
+        "potionData": {
+          "type": "TURTLE_MASTER",
+          "extended": true,
+          "upgraded": false
+        }
+      },
+      "aliases": [
+        "turtlemasterextendedpotion",
+        "tmextendedpotion",
+        "turtlemasterexpotion",
+        "tmexpotion",
+        "turtlemasterexpot",
+        "tmexpot"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "POTION",
+        "potionData": {
+          "type": "TURTLE_MASTER",
+          "extended": false,
+          "upgraded": true
+        }
+      },
+      "aliases": [
+        "turtlemasterleveliipotion",
+        "tmleveliipotion",
+        "tmlevel2potion",
+        "turtlemasterlevel2potion",
+        "turtlemasteriipotion",
+        "tmiipotion",
+        "tm2potion",
+        "turtlemaster2potion",
+        "turtlemasterleveliipot",
+        "tmleveliipot",
+        "tmlevel2pot",
+        "turtlemasterlevel2pot",
+        "turtlemasteriipot",
+        "tmiipot",
+        "tm2pot",
+        "turtlemaster2pot"
       ]
     },
     {
@@ -12376,10 +12413,6 @@
         "data": 16397
       },
       "aliases": [
-        "splashartlesspotion",
-        "splashartlesspot",
-        "splartlesspotion",
-        "splartlesspot",
         "splashwaterbreathingpotion",
         "splashwaterbreathpotion",
         "splashbreathingpotion",
@@ -13278,9 +13311,97 @@
     },
     {
       "spigot": {
+        "material": "SPLASH_POTION",
+        "potionData": {
+          "type": "TURTLE_MASTER",
+          "extended": false,
+          "upgraded": false
+        }
+      },
+      "aliases": [
+        "splashturtlemasterpotion",
+        "splashtmpotion",
+        "splashturtlemasterpot",
+        "splashtmpot",
+        "splturtlemasterpotion",
+        "spltmpotion",
+        "splturtlemasterpot",
+        "spltmpot"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "SPLASH_POTION",
+        "potionData": {
+          "type": "TURTLE_MASTER",
+          "extended": true,
+          "upgraded": false
+        }
+      },
+      "aliases": [
+        "splashturtlemasterextendedpotion",
+        "splashtmextendedpotion",
+        "splashturtlemasterexpotion",
+        "splashtmexpotion",
+        "splashturtlemasterexpot",
+        "splashtmexpot",
+        "splturtlemasterextendedpotion",
+        "spltmextendedpotion",
+        "splturtlemasterexpotion",
+        "spltmexpotion",
+        "splturtlemasterexpot",
+        "spltmexpot"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "SPLASH_POTION",
+        "potionData": {
+          "type": "TURTLE_MASTER",
+          "extended": false,
+          "upgraded": true
+        }
+      },
+      "aliases": [
+        "splashturtlemasterleveliipotion",
+        "splashtmleveliipotion",
+        "splashtmlevel2potion",
+        "splashturtlemasterlevel2potion",
+        "splashturtlemasteriipotion",
+        "splashtmiipotion",
+        "splashtm2potion",
+        "splashturtlemaster2potion",
+        "splashturtlemasterleveliipot",
+        "splashtmleveliipot",
+        "splashtmlevel2pot",
+        "splashturtlemasterlevel2pot",
+        "splashturtlemasteriipot",
+        "splashtmiipot",
+        "splashtm2pot",
+        "splashturtlemaster2pot",
+        "splturtlemasterleveliipotion",
+        "spltmleveliipotion",
+        "spltmlevel2potion",
+        "splturtlemasterlevel2potion",
+        "splturtlemasteriipotion",
+        "spltmiipotion",
+        "spltm2potion",
+        "splturtlemaster2potion",
+        "splturtlemasterleveliipot",
+        "spltmleveliipot",
+        "spltmlevel2pot",
+        "splturtlemasterlevel2pot",
+        "splturtlemasteriipot",
+        "spltmiipot",
+        "spltm2pot",
+        "splturtlemaster2pot"
+      ]
+    },
+    {
+      "spigot": {
         "material": "POTION",
         "potionData": {
-          "type": "WATER",
+          "type": "LUCK",
           "extended": false,
           "upgraded": false
         }
@@ -15704,6 +15825,54 @@
       "spigot": {
         "material": "TIPPED_ARROW",
         "potionData": {
+          "type": "TURTLE_MASTER",
+          "extended": false,
+          "upgraded": false
+        }
+      },
+      "aliases": [
+        "arrowturtlemaster",
+        "turtlemasterarrow",
+        "tmarrow",
+        "arrowtm"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "TIPPED_ARROW",
+        "potionData": {
+          "type": "TURTLE_MASTER",
+          "extended": true,
+          "upgraded": false
+        }
+      },
+      "aliases": [
+        "arrowturtlemaster2",
+        "turtlemasterarrow2",
+        "tmarrow2",
+        "arrowtm2"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "TIPPED_ARROW",
+        "potionData": {
+          "type": "TURTLE_MASTER",
+          "extended": false,
+          "upgraded": true
+        }
+      },
+      "aliases": [
+        "arrowturtlemasterii",
+        "turtlemasterarrowii",
+        "tmarrowii",
+        "arrowtmii"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "TIPPED_ARROW",
+        "potionData": {
           "type": "REGEN",
           "extended": false,
           "upgraded": true
@@ -16489,26 +16658,6 @@
       "spigot": {
         "material": "LINGERING_POTION",
         "potionData": {
-          "type": "LUCK",
-          "extended": false,
-          "upgraded": false
-        }
-      },
-      "legacy": {
-        "id": 441,
-        "data": 0
-      },
-      "aliases": [
-        "lingerpotluck",
-        "lucklingerpot",
-        "lingerpotlucky",
-        "luckylingerpot"
-      ]
-    },
-    {
-      "spigot": {
-        "material": "LINGERING_POTION",
-        "potionData": {
           "type": "REGEN",
           "extended": false,
           "upgraded": true
@@ -17142,7 +17291,11 @@
         "aoepotluck",
         "luckaoepot",
         "aoepotlucky",
-        "luckyaoepot"
+        "luckyaoepot",
+        "lingerpotluck",
+        "lucklingerpot",
+        "lingerpotlucky",
+        "luckylingerpot"
       ]
     },
     {
@@ -17175,6 +17328,54 @@
         "slowfallingaoepot2",
         "aoepotslowfall2",
         "slowfallaoepot2"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "LINGERING_POTION",
+        "potionData": {
+          "type": "TURTLE_MASTER",
+          "extended": false,
+          "upgraded": false
+        }
+      },
+      "aliases": [
+        "aoepotturtlemaster",
+        "turtlemasteraoepot",
+        "aoepottm",
+        "tmaoepot"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "LINGERING_POTION",
+        "potionData": {
+          "type": "TURTLE_MASTER",
+          "extended": true,
+          "upgraded": false
+        }
+      },
+      "aliases": [
+        "aoepotturtlemaster2",
+        "turtlemasteraoepot2",
+        "aoepottm2",
+        "tmaoepot2"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "LINGERING_POTION",
+        "potionData": {
+          "type": "TURTLE_MASTER",
+          "extended": false,
+          "upgraded": true
+        }
+      },
+      "aliases": [
+        "aoepotturtlemasterii",
+        "turtlemasteraoepotii",
+        "aoepottmii",
+        "tmaoepotii"
       ]
     },
     {
