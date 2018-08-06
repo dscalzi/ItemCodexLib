@@ -2979,12 +2979,14 @@
         "data": 0
       },
       "aliases": [
-        "woodenstairs",
-        "woodstairs",
-        "wstairs",
-        "woodenstair",
-        "woodstair",
-        "wstair"
+        "oakwoodenstairs",
+        "oakwoodstairs",
+        "oakwstairs",
+        "oakstairs",
+        "owoodenstairs",
+        "owoodstairs",
+        "owstairs",
+        "ostairs"
       ]
     },
     {
@@ -3129,14 +3131,7 @@
         "cobblestairs",
         "csstairs",
         "sstairs",
-        "cstairs",
-        "cobblestonestair",
-        "cstonestair",
-        "stonestair",
-        "cobblestair",
-        "csstair",
-        "sstair",
-        "cstair"
+        "cstairs"
       ]
     },
     {
@@ -4249,7 +4244,7 @@
         "infestedchstonebrick",
         "infestedchstonebricks",
         "infestedchsbrick",
-        "infestedchsbricks"
+        "infestedchsbricks",
         "silverfishchiseledstonebrick",
         "silverfishchstonebrick",
         "silverfishchsbrick",
@@ -4382,6 +4377,10 @@
         "data": 0
       },
       "aliases": [
+        "brownmushroomblock",
+        "bmushroomblock",
+        "bmushblock",
+        "bshroomblock",
         "giantbrownmushroom",
         "hugebrownmushroom",
         "bigbrownmushroom",
@@ -4417,6 +4416,10 @@
         "data": 0
       },
       "aliases": [
+        "redmushroomblock",
+        "rmushroomblock",
+        "rmushblock",
+        "rshroomblock",
         "giantredmushroom",
         "hugeredmushroom",
         "bigredmushroom",
@@ -4572,13 +4575,7 @@
         "redbstairs",
         "rbrickstairs",
         "bstairs",
-        "redstairs",
-        "brickstair",
-        "redbrickstair",
-        "redbstair",
-        "rbrickstair",
-        "bstair",
-        "redstair"
+        "redstairs"
       ]
     },
     {
@@ -4590,7 +4587,6 @@
         "data": 0
       },
       "aliases": [
-        "sbstair",
         "stonebrickstairs",
         "stonebstairs",
         "sbstairs",
@@ -4705,19 +4701,7 @@
         "nbstairs",
         "hbstairs",
         "nstairs",
-        "hstairs",
-        "netherbrickstair",
-        "hellbrickstair",
-        "nbrickstair",
-        "hbrickstair",
-        "netherbstair",
-        "hellbstair",
-        "netherstair",
-        "hellstair",
-        "nbstair",
-        "hbstair",
-        "nstair",
-        "hstair"
+        "hstairs"
       ]
     },
     {
@@ -5393,12 +5377,7 @@
         "sandstairs",
         "sandsstairs",
         "sstonestairs",
-        "ssstairs",
-        "sandstair",
-        "sandstonestair",
-        "sandsstair",
-        "sstonestair",
-        "ssstair"
+        "ssstairs"
       ]
     },
     {
@@ -5480,10 +5459,10 @@
         "sprucewoodstairs",
         "sprucewstairs",
         "sprucestairs",
-        "sprucewoodenstair",
-        "sprucewoodstair",
-        "sprucewstair",
-        "sprucestair"
+        "swoodenstairs",
+        "swoodstairs",
+        "swstairs",
+        "sstairs"
       ]
     },
     {
@@ -5499,10 +5478,10 @@
         "birchwoodstairs",
         "birchwstairs",
         "birchstairs",
-        "birchwoodenstair",
-        "birchwoodstair",
-        "birchwstair",
-        "birchstair"
+        "bwoodenstairs",
+        "bwoodstairs",
+        "bwstairs",
+        "bstairs"
       ]
     },
     {
@@ -5518,12 +5497,10 @@
         "junglewoodstairs",
         "junglewstairs",
         "junglestairs",
-        "jstairs",
-        "junglewoodenstair",
-        "junglewoodstair",
-        "junglewstair",
-        "junglestair",
-        "jstair"
+        "jwoodenstairs",
+        "jwoodstairs",
+        "jwstairs",
+        "jstairs"
       ]
     },
     {
@@ -5984,9 +5961,7 @@
       },
       "aliases": [
         "quartzstairs",
-        "qstairs",
-        "quartzstair",
-        "qstair"
+        "qstairs"
       ]
     },
     {
@@ -7138,15 +7113,7 @@
         "awoodenstairs",
         "awoodstairs",
         "awstairs",
-        "astairs",
-        "acaciawoodenstair",
-        "acaciawoodstair",
-        "acaciawstair",
-        "acaciastair",
-        "awoodenstair",
-        "awoodstair",
-        "awstair",
-        "astair"
+        "astairs"
       ]
     },
     {
@@ -7169,19 +7136,7 @@
         "dowoodenstairs",
         "dowoodstairs",
         "dowstairs",
-        "dostairs",
-        "darkoakwoodenstair",
-        "darkoakwoodstair",
-        "darkoakwstair",
-        "darkoakstair",
-        "doakwoodenstair",
-        "doakwoodstair",
-        "doakwstair",
-        "doakstair",
-        "dowoodenstair",
-        "dowoodstair",
-        "dowstair",
-        "dostair"
+        "dostairs"
       ]
     },
     {
@@ -7241,6 +7196,26 @@
     },
     {
       "spigot": {
+        "material": "PRISMARINE_SLAB"
+      },
+      "aliases": [
+        "prisslab",
+        "prismarineslab",
+        "prisstep",
+        "prismarinestep"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "PRISMARINE_STAIRS"
+      },
+      "aliases": [
+        "prisstairs",
+        "prismarinestairs"
+      ]
+    },
+    {
+      "spigot": {
         "material": "PRISMARINE_BRICKS"
       },
       "legacy": {
@@ -7262,7 +7237,31 @@
       },
       "aliases": [
         "dpris",
+        "dprismarine",
         "darkprismarine"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "DARK_PRISMARINE_SLAB"
+      },
+      "aliases": [
+        "dprisslab",
+        "dprismarineslab",
+        "darkprismarineslab",
+        "dprisstep",
+        "dprismarinestep",
+        "darkprismarinestep"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "DARK_PRISMARINE_STAIRS"
+      },
+      "aliases": [
+        "dprisstairs",
+        "dprismarinestairs",
+        "darkprismarinestairs"
       ]
     },
     {
@@ -7805,10 +7804,9 @@
         "data": 0
       },
       "aliases": [
-        "redsandstonestair",
         "redsandstonestairs",
-        "rsstair",
-        "stairredsandstone"
+        "rsstairs",
+        "stairsredsandstone"
       ]
     },
     {
@@ -8154,14 +8152,11 @@
       },
       "aliases": [
         "purpurstairs",
-        "purpurstep",
         "purpursteps",
         "purplestairs",
         "purplesteps",
-        "purplestep",
         "purstairs",
-        "pursteps",
-        "purstep"
+        "pursteps"
       ]
     },
     {
@@ -8372,6 +8367,14 @@
     },
     {
       "spigot": {
+        "material": "SHULKER_BOX"
+      },
+      "aliases": [
+        "shulkerbox"
+      ]
+    },
+    {
+      "spigot": {
         "material": "WHITE_SHULKER_BOX"
       },
       "legacy": {
@@ -8379,7 +8382,6 @@
         "data": 0
       },
       "aliases": [
-        "shulkerbox",
         "whiteshulkerbox",
         "wshulkerbox",
         "whitechest",
@@ -10592,10 +10594,6 @@
       "spigot": {
         "material": "TURTLE_HELMET"
       },
-      "legacy": {
-        "id": 313,
-        "data": 0
-      },
       "aliases": [
         "turtlehelmet",
         "turtlehelm",
@@ -11173,7 +11171,7 @@
       },
       "aliases": [
         "tegg",
-    "turtleegg"
+        "turtleegg"
       ]
     },
     {
@@ -18543,6 +18541,15 @@
     },
     {
       "spigot": {
+        "material": "SEAGRASS"
+      },
+      "aliases": [
+        "seagrass",
+        "sgrass"
+      ]
+    },
+    {
+      "spigot": {
         "material": "TRIDENT"
       },
       "aliases": [
@@ -18781,11 +18788,49 @@
     },
     {
       "spigot": {
+        "material": "CONDUIT"
+      },
+      "aliases": [
+        "conduit"
+      ]
+    },
+    {
+      "spigot": {
         "material": "PHANTOM_MEMBRANE"
       },
       "aliases": [
         "phantommembrane",
         "pmembrane"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "MUSHROOM_STEM"
+      },
+      "aliases": [
+        "mushroomstem",
+        "mushstem",
+        "shroomstem",
+        "bigmushroomstem",
+        "giantmushroomstem",
+        "hugemushroomstem",
+        "bmushroomstem",
+        "gmushroomstem",
+        "hmushroomstem",
+        "bmushstem",
+        "gmushstem",
+        "hmushstem",
+        "bshroomstem",
+        "gshroomstem",
+        "hshroomstem"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "SCUTE"
+      },
+      "aliases": [
+        "scute"
       ]
     },
     {
