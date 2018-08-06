@@ -18,7 +18,7 @@ import org.bukkit.Bukkit;
  * 
  * Ex.
  * 
- * 1.0.0-pre.7 > 1.0.0-pre.1
+ * 1.0.0-pre.7 &gt; 1.0.0-pre.1
  */
 public class VersionUtil {
 
@@ -91,7 +91,7 @@ public class VersionUtil {
      */
     public static int compare(String first, String second) {
         String[] fC = first.split("-");
-        String[] sC = first.split("-");
+        String[] sC = second.split("-");
         
         String[] fPts = fC[0].split("\\.");
         String[] sPts = sC[0].split("\\.");
@@ -107,30 +107,29 @@ public class VersionUtil {
                 if(fPts.length > 2) {
                     int fRev = Integer.parseInt(fPts[2]);
                     if(sPts.length > 2) {
-                        return fRev - Integer.parseInt(sPts[2]);
+                        int sRev = Integer.parseInt(sPts[2]);
+                        if(fRev == sRev) {
+                            // Check prerelease components
+                            if(fC.length > 1 && sC.length > 1) {
+                                // Only eval if both are prereleases.
+                                // Only supports 'pre'.
+                                int fComp = Integer.parseInt(fC[1].split("\\.")[1]);
+                                int sComp = Integer.parseInt(sC[1].split("\\.")[1]);
+                                
+                                return fComp - sComp;
+                            } else {
+                                return 0;
+                            }
+                        } else {
+                            return fRev - sRev;
+                        }
                     } else {
                         return 1;
                     }
                 } else if(sPts.length > 2) {
                     return -1;
                 } else {
-                    // Check prerelease components
-                    if(fC.length > 1) {
-                        if(sC.length > 1) {
-                            
-                            // Only supports 'pre'.
-                            int fComp = Integer.parseInt(fC[1].split("\\.")[1]);
-                            int sComp = Integer.parseInt(sC[1].split("\\.")[1]);
-                            
-                            return fComp - sComp;
-                        } else {
-                            return 1;
-                        }
-                    } else if(sC.length > 1) {
-                        return -1;
-                    } else {
-                        return 0;
-                    }
+                    return 0;
                 }
             } else {
                 return fMin - sMin;

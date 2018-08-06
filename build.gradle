@@ -1,9 +1,14 @@
-apply plugin: 'java'
-apply plugin: 'eclipse'
-apply plugin: 'maven'
+plugins {
+	id 'com.jfrog.bintray' version '1.8.4'
+	id 'java'
+	id 'eclipse'
+	id 'maven'
+	id 'maven-publish'
+}
 
 group = 'com.dscalzi'
 version = '1.0.0-pre.1'
+archivesBaseName = 'ItemCodexLib'
 
 description = """Library to dynamically retrieve items by alias, enum, or legacy data."""
 
@@ -12,7 +17,7 @@ targetCompatibility = 1.8
 
 repositories {
     mavenCentral()
-    maven { url "https://hub.spigotmc.org/nexus/content/repositories/snapshots/" }
+    maven { url 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/' }
     maven { url = 'https://oss.sonatype.org/content/repositories/snapshots' }
 }
 
@@ -56,4 +61,39 @@ build {
     dependsOn jar
 
     jar.mustRunAfter clean
+}
+
+bintrayUpload {
+    dependsOn build
+}
+
+bintray {
+    user = project.hasProperty('bintrayUser') ? project.property('bintrayUser') : System.getenv('BINTRAY_USER')
+	key = project.hasProperty('bintrayApiKey') ? project.property('bintrayApiKey') : System.getenv('BINTRAY_API_KEY')
+    publications = ["BintrayRelease"]
+    pkg {
+        repo = 'maven'
+        name = 'ItemCodexLib'
+        licenses = ['MIT']
+        vcsUrl = 'https://github.com/dscalzi/ItemCodexLib.git'
+        publish = true
+        version {
+            name = project.version
+            released = new Date()
+            vcsTag = 'v' + project.version
+        }
+    }
+}
+
+publishing {
+    publications {
+        BintrayRelease(MavenPublication) {
+            from components.java
+            groupId group
+            artifactId archivesBaseName
+            version version
+            artifact javadocJar
+            artifact sourcesJar
+        }
+    }
 }
