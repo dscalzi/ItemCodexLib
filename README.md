@@ -101,18 +101,15 @@ public void itemCodexExample() {
 }
 ```
 
-## Maven / Gradle
+## Download
 
-The library will be hosted on JCenter when everything is finalized. If you would like to contribute or test the library's progress in your plugin before then, you can build locally.
+[![](https://api.bintray.com/packages/dscalzi/maven/ItemCodexLib/images/download.svg)](https://bintray.com/dscalzi/maven/ItemCodexLib/_latestVersion)
 
-### Local Gradle Installation
+### Gradle
 
-* Clone the repository and run `gradle install`
-
-In your plugin's build.gradle:
 ```gradle
 repositories {
-    mavenLocal()
+    jcenter()
 }
 
 dependencies {
@@ -120,15 +117,28 @@ dependencies {
 }
 ```
 
-### Local Maven Installation
+### Maven
 
-* Clone the repo and run `mvn install`
-
-In your plugin's pom.xml:
 ```xml
 <dependency>
     <groupId>com.dscalzi</groupId>
     <artifactId>ItemCodexLib</artifactId>
     <version>VERSION</version>
 </dependency>
+```
+
+```xml
+<repository>
+    <id>jcenter</id>
+    <name>jcenter-bintray</name>
+    <url>http://jcenter.bintray.com</url>
+</repository>
+```
+
+## Build Locally
+
+```console
+> git clone https://github.com/dscalzi/ItemCodexLib.git
+> cd ItemCodexLib
+> gradlew build
 ```
