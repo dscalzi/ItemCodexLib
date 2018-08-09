@@ -140,7 +140,7 @@ public class ItemEntry {
                 this.itemStack.setItemMeta(meta);
             }
         }
-        return this.itemStack;
+        return this.itemStack.clone();
     }
 
     @Override
