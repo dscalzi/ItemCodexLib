@@ -25,7 +25,7 @@ public class Legacy {
     public static final Pattern LEGACY_REGEX_1 = Pattern.compile("^(\\d+):(\\d+)$");
     public static final Pattern LEGACY_REGEX_2 = Pattern.compile("^(\\d+)$");
     
-    private short id;
+    private int id;
     private short data;
     
     /**
@@ -36,7 +36,7 @@ public class Legacy {
      * 
      * @since 1.0.0
      */
-    public Legacy(short id, short data) {
+    public Legacy(int id, short data) {
         this.id = id;
         this.data = data;
     }
@@ -48,7 +48,7 @@ public class Legacy {
      * 
      * @since 1.0.0
      */
-    public short getId() {
+    public int getId() {
         return id;
     }
 
@@ -59,7 +59,7 @@ public class Legacy {
      * 
      * @since 1.0.0
      */
-    public void setId(short id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -103,13 +103,13 @@ public class Legacy {
         try {
             Matcher m1 = LEGACY_REGEX_1.matcher(s);
             if(m1.matches()) {
-                short id = Short.parseShort(m1.group(1));
+                int id = Integer.parseInt(m1.group(1));
                 short data = Short.parseShort(m1.group(2));
                 return Optional.of(new Legacy(id, data));
             }
             Matcher m2 = LEGACY_REGEX_2.matcher(s);
             if(m2.matches()) {
-                return Optional.of(new Legacy(Short.parseShort(m2.group()), (short)0));
+                return Optional.of(new Legacy(Integer.parseInt(m2.group()), (short)0));
             }
         } catch (NumberFormatException e) {
             return Optional.empty();

@@ -8,7 +8,7 @@ package com.dscalzi.itemcodexlib.component;
 import java.util.List;
 
 import org.bukkit.inventory.ItemStack;
-import org.bukkit.inventory.meta.PotionMeta;
+import com.dscalzi.itemcodexlib.component.adapter.IItemStackAdapter;
 
 /**
  * Represents an ItemEntry in the JSON file.
@@ -27,6 +27,7 @@ public class ItemEntry {
     private List<String> aliases;
     
     private transient ItemStack itemStack;
+    private transient IItemStackAdapter adapter;
     
     /**
      * Create a new ItemEntry.
@@ -34,13 +35,15 @@ public class ItemEntry {
      * @param spigot This item's corresponding Spigot object.
      * @param legacy This item's corresponding Legacy object or null.
      * @param aliases A list of aliases for this item.
+     * @param adapter The IStackAdapter to handle ItemStack creation.
      * 
      * @since 1.0.0
      */
-    public ItemEntry(Spigot spigot, Legacy legacy, List<String> aliases) {
+    public ItemEntry(Spigot spigot, Legacy legacy, List<String> aliases, IItemStackAdapter adapter) {
         this.spigot = spigot;
         this.legacy = legacy;
         this.aliases = aliases;
+        this.adapter = adapter;
     }
 
     /**
@@ -133,12 +136,7 @@ public class ItemEntry {
      */
     public ItemStack getItemStack() {
         if(this.itemStack == null) {
-            this.itemStack = new ItemStack(this.getSpigot().getMaterial());
-            if(this.getSpigot().hasPotionData()) {
-                PotionMeta meta = ((PotionMeta) this.itemStack.getItemMeta());
-                meta.setBasePotionData(this.getSpigot().getPotionData());
-                this.itemStack.setItemMeta(meta);
-            }
+            this.itemStack = this.adapter.resolveItemStack(this);
         }
         return this.itemStack.clone();
     }

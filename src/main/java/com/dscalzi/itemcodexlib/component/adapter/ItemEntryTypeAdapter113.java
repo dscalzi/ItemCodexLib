@@ -11,6 +11,7 @@ import java.util.logging.Logger;
 
 import com.dscalzi.itemcodexlib.component.ItemEntry;
 import com.dscalzi.itemcodexlib.component.Legacy;
+import com.dscalzi.itemcodexlib.component.PotionAbstract;
 import com.dscalzi.itemcodexlib.component.Spigot;
 import com.google.gson.Gson;
 import com.google.gson.JsonDeserializationContext;
@@ -22,12 +23,14 @@ import com.google.gson.JsonSerializationContext;
 import com.google.gson.JsonSerializer;
 import com.google.gson.reflect.TypeToken;
 
-public class ItemEntryTypeAdapter implements JsonSerializer<ItemEntry>, JsonDeserializer<ItemEntry>{
+public class ItemEntryTypeAdapter113 implements JsonSerializer<ItemEntry>, JsonDeserializer<ItemEntry>{
 
     private Logger logger;
+    private IItemStackAdapter adapter;
     
-    public ItemEntryTypeAdapter(Logger logger) {
+    public ItemEntryTypeAdapter113(Logger logger) {
         this.logger = logger;
+        this.adapter = new ItemStackAdapter113();
     }
     
     @Override
@@ -39,9 +42,9 @@ public class ItemEntryTypeAdapter implements JsonSerializer<ItemEntry>, JsonDese
         spigotObject.addProperty(Spigot.KEY_MATERIAL, s.getMaterial().name());
         if(src.getSpigot().hasPotionData()) {
             JsonObject potionData = new JsonObject();
-            potionData.addProperty(Spigot.KEY_POTION_TYPE, s.getPotionData().getType().name());
-            potionData.addProperty(Spigot.KEY_POTION_EXTENDED, s.getPotionData().isExtended());
-            potionData.addProperty(Spigot.KEY_POTION_UPGRADED, s.getPotionData().isExtended());
+            potionData.addProperty(PotionAbstract.KEY_POTION_TYPE, s.getPotionData().getType());
+            potionData.addProperty(PotionAbstract.KEY_POTION_EXTENDED, s.getPotionData().isExtended());
+            potionData.addProperty(PotionAbstract.KEY_POTION_UPGRADED, s.getPotionData().isExtended());
             
             spigotObject.add(Spigot.KEY_POTION_DATA, potionData);
         }
@@ -82,7 +85,7 @@ public class ItemEntryTypeAdapter implements JsonSerializer<ItemEntry>, JsonDese
             return null;
         }
         
-        return new ItemEntry(spigot, legacy, aliases);
+        return new ItemEntry(spigot, legacy, aliases, adapter);
     }
 
 }

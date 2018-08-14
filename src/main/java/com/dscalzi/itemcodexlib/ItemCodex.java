@@ -25,8 +25,8 @@ import org.bukkit.potion.PotionData;
 import com.dscalzi.itemcodexlib.component.ItemEntry;
 import com.dscalzi.itemcodexlib.component.ItemList;
 import com.dscalzi.itemcodexlib.component.Legacy;
-import com.dscalzi.itemcodexlib.component.adapter.IELegacyTypeAdapter;
-import com.dscalzi.itemcodexlib.component.adapter.ItemEntryTypeAdapter;
+import com.dscalzi.itemcodexlib.component.adapter.ItemEntryTypeAdapter18;
+import com.dscalzi.itemcodexlib.component.adapter.ItemEntryTypeAdapter113;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.stream.JsonReader;
@@ -46,6 +46,8 @@ public class ItemCodex {
     private Map<String, ItemEntry> aliasMap;
     private File localFile;
     private Logger logger;
+    
+    private boolean legacy = false;
     
     /**
      * Initialize a new ItemCodex instance.
@@ -103,10 +105,11 @@ public class ItemCodex {
         
         if(VersionUtil.compare(VersionUtil.getVersion(), "1.13") >= 0){
             logger.info("Using 1.13 Item Adapter.");
-            g = new GsonBuilder().registerTypeAdapter(ItemEntry.class, new ItemEntryTypeAdapter(this.logger)).create();
+            g = new GsonBuilder().registerTypeAdapter(ItemEntry.class, new ItemEntryTypeAdapter113(this.logger)).create();
         } else {
             logger.info("Using Legacy Item Adapter.");
-            g = new GsonBuilder().registerTypeAdapter(ItemEntry.class, new IELegacyTypeAdapter(this.logger)).create();
+            this.legacy = true;
+            g = new GsonBuilder().registerTypeAdapter(ItemEntry.class, new ItemEntryTypeAdapter18(this.logger)).create();
         }
         
         try(Reader r = new FileReader(localFile);
@@ -128,7 +131,7 @@ public class ItemCodex {
         
         for(final ItemEntry e : loadedList.getItems()) {
             
-            if(!e.getSpigot().hasPotionData()) {
+            if(!this.legacy && !e.getSpigot().hasPotionData()) {
                 aliasMap.put(e.getSpigot().getMaterial().name().toLowerCase(), e);
             }
             for(final String s : e.getAliases()) {

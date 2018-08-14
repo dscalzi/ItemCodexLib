@@ -6,7 +6,6 @@
 package com.dscalzi.itemcodexlib.component;
 
 import org.bukkit.Material;
-import org.bukkit.potion.PotionData;
 
 /**
  * Represents a Spigot object in the JSON file.
@@ -18,17 +17,12 @@ import org.bukkit.potion.PotionData;
  */
 public class Spigot  {
     
-    // These MUST match the declared fields in org.bukkit.potion.PotionData
-    public static final String KEY_POTION_TYPE = "type";
-    public static final String KEY_POTION_EXTENDED = "extended";
-    public static final String KEY_POTION_UPGRADED = "upgraded";
-    
     // These MUST match the fields declared below.
     public static final String KEY_MATERIAL = "material";
     public static final String KEY_POTION_DATA = "potionData";
     
     private Material material;
-    private PotionData potionData;
+    private PotionAbstract potionData;
     
     /**
      * Create a new Spigot object.
@@ -49,7 +43,7 @@ public class Spigot  {
      * 
      * @since 1.0.0
      */
-    public Spigot(Material material, PotionData potionData) {
+    public Spigot(Material material, PotionAbstract potionData) {
         this.material = material;
         this.potionData = potionData;
     }
@@ -97,7 +91,7 @@ public class Spigot  {
      * 
      * @since 1.0.0
      */
-    public PotionData getPotionData() {
+    public PotionAbstract getPotionData() {
         return potionData;
     }
 
@@ -108,7 +102,7 @@ public class Spigot  {
      * 
      * @since 1.0.0
      */
-    public void setPotionData(PotionData pData) {
+    public void setPotionData(PotionAbstract pData) {
         this.potionData = pData;
     }
 
