@@ -25,6 +25,7 @@ import org.bukkit.potion.PotionData;
 import com.dscalzi.itemcodexlib.component.ItemEntry;
 import com.dscalzi.itemcodexlib.component.ItemList;
 import com.dscalzi.itemcodexlib.component.Legacy;
+import com.dscalzi.itemcodexlib.component.adapter.IELegacyTypeAdapter;
 import com.dscalzi.itemcodexlib.component.adapter.ItemEntryTypeAdapter;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -98,7 +99,15 @@ public class ItemCodex {
     }
     
     private ItemList loadJSONFile() {
-        Gson g = new GsonBuilder().registerTypeAdapter(ItemEntry.class, new ItemEntryTypeAdapter(this.logger)).create();
+        Gson g = null;
+        
+        if(VersionUtil.compare(VersionUtil.getVersion(), "1.13") >= 0){
+            logger.info("Using 1.13 Item Adapter.");
+            g = new GsonBuilder().registerTypeAdapter(ItemEntry.class, new ItemEntryTypeAdapter(this.logger)).create();
+        } else {
+            logger.info("Using Legacy Item Adapter.");
+            g = new GsonBuilder().registerTypeAdapter(ItemEntry.class, new IELegacyTypeAdapter(this.logger)).create();
+        }
         
         try(Reader r = new FileReader(localFile);
             JsonReader jr = new JsonReader(r)){

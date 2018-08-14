@@ -5,6 +5,7 @@
  */
 package com.dscalzi.itemcodexlib;
 
+import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.bukkit.Bukkit;
@@ -22,7 +23,7 @@ import org.bukkit.Bukkit;
  */
 public class VersionUtil {
 
-    private static final Pattern VERSION_REGEX = Pattern.compile("\\(MC: (.*)\\)");
+    private static final Pattern VERSION_REGEX = Pattern.compile("\\(MC: (.+?)\\)");
     
     private static String version;
     
@@ -35,7 +36,9 @@ public class VersionUtil {
      */
     public static String getVersion() {
         if(version == null) {
-            version = VERSION_REGEX.matcher(Bukkit.getVersion()).group();
+            Matcher m = VERSION_REGEX.matcher(Bukkit.getVersion());
+            m.find();
+            version = m.group(1);
         }
         return version;
     }
