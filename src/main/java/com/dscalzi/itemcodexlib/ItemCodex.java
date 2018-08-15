@@ -18,14 +18,17 @@ import java.util.Optional;
 import java.util.logging.Logger;
 
 import org.bukkit.inventory.ItemStack;
-import org.bukkit.inventory.meta.PotionMeta;
 import org.bukkit.plugin.java.JavaPlugin;
-import org.bukkit.potion.PotionData;
-
 import com.dscalzi.itemcodexlib.component.ItemEntry;
 import com.dscalzi.itemcodexlib.component.ItemList;
 import com.dscalzi.itemcodexlib.component.Legacy;
+import com.dscalzi.itemcodexlib.component.PotionAbstract;
 import com.dscalzi.itemcodexlib.component.adapter.ItemEntryTypeAdapter18;
+import com.dscalzi.itemcodexlib.component.adapter.ItemStackAdapter113;
+import com.dscalzi.itemcodexlib.component.adapter.ItemStackAdapter18;
+import com.dscalzi.itemcodexlib.component.adapter.ItemStackAdapter19;
+import com.dscalzi.itemcodexlib.component.adapter.IItemStackAdapter;
+import com.dscalzi.itemcodexlib.component.adapter.ILegacyItemStackAdapter;
 import com.dscalzi.itemcodexlib.component.adapter.ItemEntryTypeAdapter113;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -38,7 +41,7 @@ import com.google.gson.stream.JsonReader;
  */
 public class ItemCodex {
 
-    public static final String VERSION = "1.0.0-pre.4";
+    public static final String VERSION = "1.0.0-pre.5";
     public static final String CODEX_FILE_NAME = "items.json";
     
     private ItemList loadedList;
@@ -48,6 +51,7 @@ public class ItemCodex {
     private Logger logger;
     
     private boolean legacy = false;
+    private IItemStackAdapter adapter;
     
     /**
      * Initialize a new ItemCodex instance.
@@ -62,6 +66,14 @@ public class ItemCodex {
         this.aliasMap = new HashMap<String, ItemEntry>();
         this.localFile = new File(plugin.getDataFolder() + File.separator + CODEX_FILE_NAME);
         this.logger = plugin.getLogger();
+        
+        if(VersionUtil.compare(VersionUtil.getVersion(), "1.13") >= 0) {
+            this.adapter = new ItemStackAdapter113();
+        } else if(VersionUtil.compare(VersionUtil.getVersion(), "1.9") >= 0) {
+            this.adapter = new ItemStackAdapter19();
+        } else {
+            this.adapter = new ItemStackAdapter18();
+        }
         
         logger.info("Loading ItemCodex..");
         this.initialize();
@@ -103,7 +115,7 @@ public class ItemCodex {
     private ItemList loadJSONFile() {
         Gson g = null;
         
-        if(VersionUtil.compare(VersionUtil.getVersion(), "1.13") >= 0){
+        if(this.adapter instanceof ItemStackAdapter113){
             logger.info("Using 1.13 Item Adapter.");
             g = new GsonBuilder().registerTypeAdapter(ItemEntry.class, new ItemEntryTypeAdapter113(this.logger)).create();
         } else {
@@ -203,19 +215,38 @@ public class ItemCodex {
      */
     public Optional<ItemEntry> getItemByItemStack(ItemStack item){
         
-        if(item.hasItemMeta() && item.getItemMeta() instanceof PotionMeta) {
-            PotionData originData = ((PotionMeta)item.getItemMeta()).getBasePotionData();
-            for(ItemEntry e : loadedList.getItems()) {
-                if(e.getSpigot().getMaterial().equals(item.getType())) {
-                    if(e.getSpigot().hasPotionData() && e.getSpigot().getPotionData().equals(originData)) {
-                        return Optional.of(e);
+        if(this.adapter instanceof ILegacyItemStackAdapter) {
+            ILegacyItemStackAdapter lAdapter = (ILegacyItemStackAdapter)adapter;
+            Legacy l = lAdapter.getLegacyFromItemStack(item);
+            if(this.adapter.isPotion(item)) {
+                if(adapter instanceof ItemStackAdapter19) {
+                    PotionAbstract potionData = adapter.abstractPotionData(item);
+                    for(ItemEntry e : loadedList.getItems()) {
+                        if(e.getSpigot().getMaterial() == item.getType()) {
+                            if(e.getSpigot().getPotionData().equals(potionData)) {
+                                return Optional.of(e);
+                            }
+                        }
                     }
                 }
             }
+            // 1.8 is pure id:data
+            return getItemByLegacy(l);
         } else {
-            for(ItemEntry e : loadedList.getItems()) {
-                if(e.getSpigot().getMaterial().equals(item.getType())) {
-                    return Optional.of(e);
+            if(this.adapter.isPotion(item)) {
+                PotionAbstract potionData = adapter.abstractPotionData(item);
+                for(ItemEntry e : loadedList.getItems()) {
+                    if(e.getSpigot().getMaterial().equals(item.getType())) {
+                        if(e.getSpigot().hasPotionData() && e.getSpigot().getPotionData().equals(potionData)) {
+                            return Optional.of(e);
+                        }
+                    }
+                }
+            } else {
+                for(ItemEntry e : loadedList.getItems()) {
+                    if(e.getSpigot().getMaterial().equals(item.getType())) {
+                        return Optional.of(e);
+                    }
                 }
             }
         }

@@ -7,7 +7,7 @@ plugins {
 }
 
 group = 'com.dscalzi'
-version = '1.0.0-pre.4'
+version = '1.0.0-pre.5'
 archivesBaseName = 'ItemCodexLib'
 
 description = """Library to dynamically retrieve items by alias, enum, or legacy data."""

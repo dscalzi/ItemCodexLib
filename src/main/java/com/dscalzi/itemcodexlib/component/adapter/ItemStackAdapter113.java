@@ -41,4 +41,28 @@ public class ItemStackAdapter113 implements IItemStackAdapter {
         return is;
     }
 
+    @Override
+    public boolean isPotion(ItemStack i) {
+        return i.hasItemMeta() && i.getItemMeta() instanceof PotionMeta;
+    }
+
+    @Override
+    public PotionAbstract abstractPotionData(ItemStack i) {
+        if(this.isPotion(i)) {
+            Class<?> potionDataClass = ReflectionUtil.getBukkitClass("potion.PotionData");
+            Method getBasePotionData = ReflectionUtil.getMethod(PotionMeta.class, "getBasePotionData");
+            Method getType = ReflectionUtil.getMethod(potionDataClass, "getType");
+            Method isExtended = ReflectionUtil.getMethod(potionDataClass, "isExtended");
+            Method isUpgraded = ReflectionUtil.getMethod(potionDataClass, "isUpgraded");
+            try {
+                Object originData = getBasePotionData.invoke((PotionMeta)i.getItemMeta());
+                return new PotionAbstract(((PotionType)getType.invoke(originData)).name(), (boolean)isExtended.invoke(originData), (boolean)isUpgraded.invoke(originData));
+            } catch (Throwable t) {
+                t.printStackTrace();
+                return null;
+            }
+        }
+        return null;
+    }
+
 }
