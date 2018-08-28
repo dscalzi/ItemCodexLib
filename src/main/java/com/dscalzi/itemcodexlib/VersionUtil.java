@@ -53,7 +53,7 @@ public class VersionUtil {
      * @since 1.0.0
      */
     public static boolean gt(String first, String second) {
-        return compare(first, second) == 1;
+        return compare(first, second) > 0;
     }
     
     /**
@@ -66,7 +66,7 @@ public class VersionUtil {
      * @since 1.0.0
      */
     public static boolean lt(String first, String second) {
-        return compare(first, second) == -1;
+        return compare(first, second) < 0;
     }
     
     /**

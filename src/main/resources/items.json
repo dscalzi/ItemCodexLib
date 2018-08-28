@@ -1,6 +1,6 @@
 {
-  "version": "1.13",
-  "revision": "1.0.0-pre.5",
+  "version": "1.13.1",
+  "revision": "1.0.0-pre.6",
   "items": [
     {
       "spigot": {
@@ -17616,6 +17616,86 @@
     },
     {
       "spigot": {
+        "material": "TUBE_CORAL_WALL_FAN"
+      },
+      "aliases": [
+        "tubecoralwallfan"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "BRAIN_CORAL_WALL_FAN"
+      },
+      "aliases": [
+        "braincoralwallfan"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "BUBBLE_CORAL_WALL_FAN"
+      },
+      "aliases": [
+        "bubblecoralwallfan"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "FIRE_CORAL_WALL_FAN"
+      },
+      "aliases": [
+        "firecoralwallfan"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "HORN_CORAL_WALL_FAN"
+      },
+      "aliases": [
+        "horncoralwallfan"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "DEAD_TUBE_CORAL"
+      },
+      "aliases": [
+        "deadtubecoral"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "DEAD_BRAIN_CORAL"
+      },
+      "aliases": [
+        "deadbraincoral"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "DEAD_BUBBLE_CORAL"
+      },
+      "aliases": [
+        "deadbubblecoral"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "DEAD_FIRE_CORAL"
+      },
+      "aliases": [
+        "deadfirecoral"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "DEAD_HORN_CORAL"
+      },
+      "aliases": [
+        "deadhorncoral"
+      ]
+    },
+    {
+      "spigot": {
         "material": "DEAD_TUBE_CORAL_FAN"
       },
       "aliases": [
@@ -17652,6 +17732,46 @@
       },
       "aliases": [
         "deadhorncoralfan"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "DEAD_TUBE_CORAL_WALL_FAN"
+      },
+      "aliases": [
+        "deadtubecoralwallfan"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "DEAD_BRAIN_CORAL_WALL_FAN"
+      },
+      "aliases": [
+        "deadbraincoralwallfan"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "DEAD_BUBBLE_CORAL_WALL_FAN"
+      },
+      "aliases": [
+        "deadbubblecoralwallfan"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "DEAD_FIRE_CORAL_WALL_FAN"
+      },
+      "aliases": [
+        "deadfirecoralwallfan"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "DEAD_HORN_CORAL_WALL_FAN"
+      },
+      "aliases": [
+        "deadhorncoralwallfan"
       ]
     },
     {
