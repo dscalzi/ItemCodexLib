@@ -77,7 +77,7 @@ public class ItemStackAdapter19 implements IItemStackAdapter, ILegacyItemStackAd
         return null;
     }
 
-	@Override
+    @Override
     public Legacy getLegacyFromItemStack(ItemStack i) {
         Method getTypeId = ReflectionUtil.getMethod(ItemStack.class, "getTypeId");
         Method getDurability = ReflectionUtil.getMethod(ItemStack.class, "getDurability");
