@@ -1,6 +1,6 @@
 {
-  "version": "1.13.1",
-  "revision": "1.0.0-pre.6",
+  "version": "1.14.3",
+  "revision": "1.0.0-pre.7",
   "items": [
     {
       "spigot": {
@@ -1806,22 +1806,146 @@
     },
     {
       "spigot": {
-        "material": "STONE_SLAB"
+        "material": "SMOOTH_STONE_SLAB"
       },
       "legacy": {
         "id": 44,
         "data": 0
       },
       "aliases": [
-        "stonestep",
-        "sstep",
+        "smoothstoneslab",
         "step",
-        "stoneslab",
-        "sslab",
         "slab",
-        "stonehalfblock",
-        "shalfblock",
         "halfblock"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "STONE_SLAB"
+      },
+      "aliases": [
+        "stoneslab"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "ANDESITE_SLAB"
+      },
+      "aliases": [
+        "andesiteslab"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "POLISHED_ANDESITE_SLAB"
+      },
+      "aliases": [
+        "polishedandesiteslab"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "DIORITE_SLAB"
+      },
+      "aliases": [
+        "dioriteslab"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "POLISHED_DIORITE_SLAB"
+      },
+      "aliases": [
+        "polisheddioriteslab"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "GRANITE_SLAB"
+      },
+      "aliases": [
+        "graniteslab"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "POLISHED_GRANITE_SLAB"
+      },
+      "aliases": [
+        "polishedgraniteslab"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "MOSSY_STONE_BRICK_SLAB"
+      },
+      "aliases": [
+        "mossystonebrickslab"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "MOSSY_COBBLESTONE_SLAB"
+      },
+      "aliases": [
+        "mossycobblestoneslab",
+        "mossyslab"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "SMOOTH_SANDSTONE_SLAB"
+      },
+      "aliases": [
+        "smoothsandstoneslab"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "CUT_SANDSTONE_SLAB"
+      },
+      "aliases": [
+        "cutsandstoneslab"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "SMOOTH_RED_SANDSTONE_SLAB"
+      },
+      "aliases": [
+        "smoothredsandstoneslab"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "CUT_RED_SANDSTONE_SLAB"
+      },
+      "aliases": [
+        "cutredsandstoneslab"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "SMOOTH_QUARTZ_SLAB"
+      },
+      "aliases": [
+        "smoothquartzslab"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "RED_NETHER_BRICK_SLAB"
+      },
+      "aliases": [
+        "rednetherbrickslab"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "END_STONE_BRICK_SLAB"
+      },
+      "aliases": [
+        "endstonebrickslab"
       ]
     },
     {
@@ -2064,6 +2188,15 @@
     },
     {
       "spigot": {
+        "material": "LECTERN"
+      },
+      "aliases": [
+        "bookstand",
+        "lectern"
+      ]
+    },
+    {
+      "spigot": {
         "material": "MOSSY_COBBLESTONE"
       },
       "legacy": {
@@ -2108,6 +2241,15 @@
         "torch",
         "burningstick",
         "burnstick"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "LANTERN"
+      },
+      "aliases": [
+        "lantern",
+        "lamp"
       ]
     },
     {
@@ -2171,6 +2313,18 @@
     },
     {
       "spigot": {
+        "material": "BARREL"
+      },
+      "legacy": {
+        "id": 54,
+        "data": 0
+      },
+      "aliases": [
+        "barrel"
+      ]
+    },
+    {
+      "spigot": {
         "material": "DIAMOND_ORE"
       },
       "legacy": {
@@ -2226,6 +2380,56 @@
     },
     {
       "spigot": {
+        "material": "SMITHING_TABLE"
+      },
+      "aliases": [
+        "smithingtable",
+        "smithtable"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "SMOKER"
+      },
+      "aliases": [
+        "smoker"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "STONECUTTER"
+      },
+      "aliases": [
+        "stonecutter"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "STONECUTTER"
+      },
+      "aliases": [
+        "stonecutter"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "LOOM"
+      },
+      "aliases": [
+        "loom"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "SCAFFOLDING"
+      },
+      "aliases": [
+        "scaffolding",
+        "scaffold"
+      ]
+    },
+    {
+      "spigot": {
         "material": "FARMLAND"
       },
       "legacy": {
@@ -2246,6 +2450,57 @@
       },
       "aliases": [
         "furnace"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "BLAST_FURNACE"
+      },
+      "aliases": [
+        "blastfurnace"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "CAMPFIRE"
+      },
+      "aliases": [
+        "campfire"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "CARTOGRAPHY_TABLE"
+      },
+      "aliases": [
+        "cartographytable",
+        "cartable"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "COMPOSTER"
+      },
+      "aliases": [
+        "composter",
+        "compost"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "FLETCHING_TABLE"
+      },
+      "aliases": [
+        "fletchingtable",
+        "fletchtable"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "GRINDSTONE"
+      },
+      "aliases": [
+        "grindstone"
       ]
     },
     {
@@ -2299,6 +2554,127 @@
         "csstairs",
         "sstairs",
         "cstairs"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "ANDESITE_STAIRS"
+      },
+      "aliases": [
+        "andesitestairs",
+        "andesitestair"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "DIORITE_STAIRS"
+      },
+      "aliases": [
+        "dioritestairs",
+        "dioritestair"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "GRANITE_STAIRS"
+      },
+      "aliases": [
+        "granitestairs",
+        "granitestair"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "POLISHED_ANDESITE_STAIRS"
+      },
+      "aliases": [
+        "polishedandesitestairs",
+        "polishedandesitestair"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "POLISHED_DIORITE_STAIRS"
+      },
+      "aliases": [
+        "polisheddioritestairs",
+        "polisheddioritestair"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "POLISHED_GRANITE_STAIRS"
+      },
+      "aliases": [
+        "polishedgranitestairs",
+        "polishedgranitestair"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "MOSSY_STONE_BRICK_STAIRS"
+      },
+      "aliases": [
+        "mossystonebrickstairs",
+        "mossystonestair"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "MOSSY_COBBLESTONE_STAIRS"
+      },
+      "aliases": [
+        "mossycobblestonestairs",
+        "mossycobblestonestair",
+        "mossycobblestairs",
+        "mossycobblestair",
+        "mossystairs",
+        "mossystair"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "SMOOTH_SANDSTONE_STAIRS"
+      },
+      "aliases": [
+        "smoothsandstonestairs",
+        "smoothsandstonestair"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "SMOOTH_RED_SANDSTONE_STAIRS"
+      },
+      "aliases": [
+        "smoothredsandstonestairs",
+        "smoothredsandstonestair"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "SMOOTH_QUARTZ_STAIRS"
+      },
+      "aliases": [
+        "smoothquartzstairs",
+        "smoothquartzstair"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "RED_NETHER_BRICK_STAIRS"
+      },
+      "aliases": [
+        "rednetherbrickstairs",
+        "rednetherbrickstair"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "END_STONE_BRICK_STAIRS"
+      },
+      "aliases": [
+        "endstonebrickstairs",
+        "endstonebrickstair"
       ]
     },
     {
@@ -2564,6 +2940,15 @@
       "aliases": [
         "jukebox",
         "jbox"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "BELL"
+      },
+      "aliases": [
+        "bell",
+        "dingdonger"
       ]
     },
     {
@@ -4193,6 +4578,97 @@
         "mcswall",
         "mcsfence",
         "mcfence"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "BRICK_WALL"
+      },
+      "aliases": [
+        "brickwall"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "ANDESITE_WALL"
+      },
+      "aliases": [
+        "andesitewall"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "DIORITE_WALL"
+      },
+      "aliases": [
+        "dioritewall"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "GRANITE_WALL"
+      },
+      "aliases": [
+        "granitewall"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "PRISMARINE_WALL"
+      },
+      "aliases": [
+        "prismarinewall"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "STONE_BRICK_WALL"
+      },
+      "aliases": [
+        "stonebrickwall"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "MOSSY_STONE_BRICK_WALL"
+      },
+      "aliases": [
+        "mossystonebrickwall"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "SANDSTONE_WALL"
+      },
+      "aliases": [
+        "sandstonewall",
+        "sandwall"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "NETHER_BRICK_WALL"
+      },
+      "aliases": [
+        "netherbrickwall",
+        "netherwall"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "RED_NETHER_BRICK_WALL"
+      },
+      "aliases": [
+        "rednetherbrickwall",
+        "rednetherwall"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "END_STONE_BRICK_WALL"
+      },
+      "aliases": [
+        "endstonebrickwall"
       ]
     },
     {
@@ -6295,6 +6771,40 @@
     },
     {
       "spigot": {
+        "material": "CORNFLOWER"
+      },
+      "aliases": [
+        "cornflower"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "LILY_OF_THE_VALLEY"
+      },
+      "aliases": [
+        "lilyofthevalley",
+        "valleylily"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "WITHER_ROSE"
+      },
+      "aliases": [
+        "witherrose",
+        "witheredrose"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "JIGSAW"
+      },
+      "aliases": [
+        "jigsaw"
+      ]
+    },
+    {
+      "spigot": {
         "material": "LILAC"
       },
       "legacy": {
@@ -8234,6 +8744,15 @@
     },
     {
       "spigot": {
+        "material": "SWEET_BERRIES"
+      },
+      "aliases": [
+        "sweetberries",
+        "berries"
+      ]
+    },
+    {
+      "spigot": {
         "material": "BOW"
       },
       "legacy": {
@@ -8242,6 +8761,14 @@
       },
       "aliases": [
         "bow"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "CROSSBOW"
+      },
+      "aliases": [
+        "crossbow"
       ]
     },
     {
@@ -8608,6 +9135,15 @@
         "mushroomsoup",
         "mrsoup",
         "soup"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "SUSPICIOUS_STEW"
+      },
+      "aliases": [
+        "suspiciousstew",
+        "susstew"
       ]
     },
     {
@@ -9397,14 +9933,56 @@
     },
     {
       "spigot": {
-        "material": "SIGN"
+        "material": "OAK_SIGN"
       },
       "legacy": {
         "id": 323,
         "data": 0
       },
       "aliases": [
-        "sign"
+        "sign",
+        "oaksign"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "BIRCH_SIGN"
+      },
+      "aliases": [
+        "birchsign"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "SPRUCE_SIGN"
+      },
+      "aliases": [
+        "sprucesign"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "JUNGLE_SIGN"
+      },
+      "aliases": [
+        "junglesign"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "ACACIA_SIGN"
+      },
+      "aliases": [
+        "acaciasign"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "DARK_OAK_SIGN"
+      },
+      "aliases": [
+        "darkoaksign",
+        "doaksign"
       ]
     },
     {
@@ -9663,7 +10241,14 @@
         "reeds",
         "reed",
         "sugarcane",
-        "scane",
+        "scane"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "BAMBOO"
+      },
+      "aliases": [
         "bamboo"
       ]
     },
@@ -9975,68 +10560,17 @@
         "data": 0
       },
       "aliases": [
-        "dye",
         "inksack",
         "inksac",
         "isack",
         "isac",
         "sack",
-        "sac",
-        "blackinksack",
-        "blackinksac",
-        "blackisack",
-        "blackisac",
-        "blacksack",
-        "blacksac",
-        "inksackblack",
-        "inksacblack",
-        "isackblack",
-        "isacblack",
-        "sackblack",
-        "sacblack",
-        "blackinksackcolour",
-        "blackinksaccolour",
-        "blackisackcolour",
-        "blackisaccolour",
-        "blacksackcolour",
-        "blacksaccolour",
-        "inksackblackcolour",
-        "inksacblackcolour",
-        "isackblackcolour",
-        "isacclackcolour",
-        "sackblackcolour",
-        "sacblackcolour",
-        "blackinksackcolor",
-        "blackinksaccolor",
-        "blackisackcolor",
-        "blackisaccolor",
-        "blacksackcolor",
-        "blacksaccolor",
-        "inksackblackcolor",
-        "inksacblackcolor",
-        "isackblackcolor",
-        "isacblackcolor",
-        "sackblackcolor",
-        "sacblackcolor",
-        "blackinksackdye",
-        "blackinksacdye",
-        "blackisackdye",
-        "blackisacdye",
-        "blacksackdye",
-        "blacksacdye",
-        "inksackblackdye",
-        "inksacblackdye",
-        "isackblackdye",
-        "isacclackdye",
-        "sackblackdye",
-        "sacblackdye",
-        "blackcolor",
-        "blackdye"
+        "sac"
       ]
     },
     {
       "spigot": {
-        "material": "ROSE_RED"
+        "material": "RED_DYE"
       },
       "legacy": {
         "id": 351,
@@ -10061,7 +10595,7 @@
     },
     {
       "spigot": {
-        "material": "CACTUS_GREEN"
+        "material": "GREEN_DYE"
       },
       "legacy": {
         "id": 351,
@@ -10083,6 +10617,24 @@
     },
     {
       "spigot": {
+        "material": "BROWN_DYE"
+      },
+      "aliases": [
+        "browndye",
+        "brdye"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "BLACK_DYE"
+      },
+      "aliases": [
+        "blackdye",
+        "bldye"
+      ]
+    },
+    {
+      "spigot": {
         "material": "COCOA_BEANS"
       },
       "legacy": {
@@ -10097,70 +10649,7 @@
         "cbeans",
         "cbean",
         "beans",
-        "bean",
-        "browncocoabeans",
-        "browncocoabean",
-        "browncocobeans",
-        "browncocobean",
-        "browncbeans",
-        "browncbean",
-        "brownbeans",
-        "brownbean",
-        "brownb",
-        "cocoabeanscolour",
-        "cocoabeancolour",
-        "cocobeanscolour",
-        "cocobeancolour",
-        "cbeanscolour",
-        "cbeancolour",
-        "beanscolour",
-        "beancolour",
-        "browncocoabeanscolour",
-        "browncocoabeancolour",
-        "browncocobeanscolour",
-        "browncocobeancolour",
-        "browncbeanscolour",
-        "browncbeancolour",
-        "brownbeanscolour",
-        "brownbeancolour",
-        "brownbcolour",
-        "cocoabeanscolor",
-        "cocoabeancolor",
-        "cocobeanscolor",
-        "cocobeancolor",
-        "cbeanscolor",
-        "cbeancolor",
-        "beanscolor",
-        "beancolor",
-        "browncocoabeanscolor",
-        "browncocoabeancolor",
-        "browncocobeanscolor",
-        "browncocobeancolor",
-        "browncbeanscolor",
-        "browncbeancolor",
-        "brownbeanscolor",
-        "brownbeancolor",
-        "brownbcolor",
-        "cocoabeansdye",
-        "cocoabeandye",
-        "cocobeansdye",
-        "cocobeandye",
-        "cbeansdye",
-        "cbeandye",
-        "beansdye",
-        "beandye",
-        "browncocoabeansdye",
-        "browncocoabeandye",
-        "browncocobeansdye",
-        "browncocobeandye",
-        "browncbeansdye",
-        "browncbeandye",
-        "brownbeansdye",
-        "brownbeandye",
-        "brownbdye",
-        "browncolour",
-        "browncolor",
-        "browndye"
+        "bean"
       ]
     },
     {
@@ -10327,7 +10816,7 @@
     },
     {
       "spigot": {
-        "material": "DANDELION_YELLOW"
+        "material": "YELLOW_DYE"
       },
       "legacy": {
         "id": 351,
@@ -10409,32 +10898,7 @@
       },
       "aliases": [
         "bonemeal",
-        "whitebonemeal",
-        "whitebonemealcolour",
-        "whitebonemealcolor",
-        "whitebonemealdye",
-        "bonemealwhite",
-        "bonemealwhitecolour",
-        "bonemealwhitecolor",
-        "bonemealwhitedye",
-        "whitebonem",
-        "whitebonemcolour",
-        "whitebonemcolor",
-        "whitebonemdye",
-        "bonemwhite",
-        "bonemwhitecolour",
-        "bonemwhitecolor",
-        "bonemwhitedye",
-        "bonemealcolour",
-        "bonemealcolor",
-        "bonemealdye",
-        "bonem",
-        "bonemcolour",
-        "bonemcolor",
-        "bonemdye",
-        "whitecolour",
-        "whitecolor",
-        "whitedye"
+        "bonem"
       ]
     },
     {
@@ -13608,6 +14072,15 @@
     },
     {
       "spigot": {
+        "material": "CAT_SPAWN_EGG"
+      },
+      "aliases": [
+        "catspawnegg",
+        "categg"
+      ]
+    },
+    {
+      "spigot": {
         "material": "SKELETON_SPAWN_EGG"
       },
       "legacy": {
@@ -13971,6 +14444,61 @@
         "ocelotspawnegg",
         "ocelotegg",
         "eggocelot"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "FOX_SPAWN_EGG"
+      },
+      "aliases": [
+        "foxspawnegg",
+        "foxegg"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "PANDA_SPAWN_EGG"
+      },
+      "aliases": [
+        "pandaspawnegg",
+        "pandaegg"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "PILLAGER_SPAWN_EGG"
+      },
+      "aliases": [
+        "pillageregg",
+        "pillagerspawnegg"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "RAVAGER_SPAWN_EGG"
+      },
+      "aliases": [
+        "ravagerspawnegg",
+        "ravageregg"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "TRADER_LLAMA_SPAWN_EGG"
+      },
+      "aliases": [
+        "traderllamaspawnegg",
+        "traderllamaegg"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "WANDERING_TRADER_SPAWN_EGG"
+      },
+      "aliases": [
+        "wanderingtraderspawnegg",
+        "wanderingtraderegg",
+        "traderegg"
       ]
     },
     {
@@ -14783,6 +15311,16 @@
         "shorsearmor",
         "sharmor",
         "sarmor"
+      ]
+    },
+    {
+      "spigot": {
+        "material": "LEATHER_HORSE_ARMOR"
+      },
+      "aliases": [
+        "leatherhorsearmor",
+        "lhorsearmor",
+        "leatherhorse"
       ]
     },
     {
@@ -17616,86 +18154,6 @@
     },
     {
       "spigot": {
-        "material": "TUBE_CORAL_WALL_FAN"
-      },
-      "aliases": [
-        "tubecoralwallfan"
-      ]
-    },
-    {
-      "spigot": {
-        "material": "BRAIN_CORAL_WALL_FAN"
-      },
-      "aliases": [
-        "braincoralwallfan"
-      ]
-    },
-    {
-      "spigot": {
-        "material": "BUBBLE_CORAL_WALL_FAN"
-      },
-      "aliases": [
-        "bubblecoralwallfan"
-      ]
-    },
-    {
-      "spigot": {
-        "material": "FIRE_CORAL_WALL_FAN"
-      },
-      "aliases": [
-        "firecoralwallfan"
-      ]
-    },
-    {
-      "spigot": {
-        "material": "HORN_CORAL_WALL_FAN"
-      },
-      "aliases": [
-        "horncoralwallfan"
-      ]
-    },
-    {
-      "spigot": {
-        "material": "DEAD_TUBE_CORAL"
-      },
-      "aliases": [
-        "deadtubecoral"
-      ]
-    },
-    {
-      "spigot": {
-        "material": "DEAD_BRAIN_CORAL"
-      },
-      "aliases": [
-        "deadbraincoral"
-      ]
-    },
-    {
-      "spigot": {
-        "material": "DEAD_BUBBLE_CORAL"
-      },
-      "aliases": [
-        "deadbubblecoral"
-      ]
-    },
-    {
-      "spigot": {
-        "material": "DEAD_FIRE_CORAL"
-      },
-      "aliases": [
-        "deadfirecoral"
-      ]
-    },
-    {
-      "spigot": {
-        "material": "DEAD_HORN_CORAL"
-      },
-      "aliases": [
-        "deadhorncoral"
-      ]
-    },
-    {
-      "spigot": {
         "material": "DEAD_TUBE_CORAL_FAN"
       },
       "aliases": [
@@ -17732,46 +18190,6 @@
       },
       "aliases": [
         "deadhorncoralfan"
-      ]
-    },
-    {
-      "spigot": {
-        "material": "DEAD_TUBE_CORAL_WALL_FAN"
-      },
-      "aliases": [
-        "deadtubecoralwallfan"
-      ]
-    },
-    {
-      "spigot": {
-        "material": "DEAD_BRAIN_CORAL_WALL_FAN"
-      },
-      "aliases": [
-        "deadbraincoralwallfan"
-      ]
-    },
-    {
-      "spigot": {
-        "material": "DEAD_BUBBLE_CORAL_WALL_FAN"
-      },
-      "aliases": [
-        "deadbubblecoralwallfan"
-      ]
-    },
-    {
-      "spigot": {
-        "material": "DEAD_FIRE_CORAL_WALL_FAN"
-      },
-      "aliases": [
-        "deadfirecoralwallfan"
-      ]
-    },
-    {
-      "spigot": {
-        "material": "DEAD_HORN_CORAL_WALL_FAN"
-      },
-      "aliases": [
-        "deadhorncoralwallfan"
       ]
     },
     {
